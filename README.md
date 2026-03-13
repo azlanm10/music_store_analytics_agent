@@ -15,7 +15,7 @@ A conversational Slack bot that answers natural-language questions about the **C
 
 The diagram below shows the high-level architecture: user questions from Slack pass through intake (validation, guardrails), memory, and the engine (planner, orchestrator, PandasAI reasoner) using the semantic layer; the response builder formats the result and sends it back to Slack.
 
-![System design](./assets/system-design.png)
+![System design](System%20Design/System%20Design.png)
 
 **Summary of components:**
 
