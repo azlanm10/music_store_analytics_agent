@@ -11,6 +11,26 @@ A conversational Slack bot that answers natural-language questions about the **C
 - **Structured output**: markdown tables for data; charts when the user asks for a "chart", "graph", or "plot"
 - **Help & greetings** handled with fixed responses
 
+## Architecture Diagram
+
+The diagram below shows the high-level architecture: user questions from Slack pass through intake (validation, guardrails), memory, and the engine (planner, orchestrator, PandasAI reasoner) using the semantic layer; the response builder formats the result and sends it back to Slack.
+
+![System design](./assets/system-design.png)
+
+**Summary of components:**
+
+| Layer | Role |
+|-------|------|
+| **Slack** | Input (user question) and output (formatted response). |
+| **Intake** | Event handling, validation (in-domain, follow-ups), guardrails (PII, read-only, prompt-injection). |
+| **Memory** | Stores conversation turns so follow-ups like "top 3" or "same for albums" can be resolved. |
+| **Engine** | Planner (chat vs follow-up), orchestrator, and PandasAI reasoner (NL → SQL/code using the semantic layer). |
+| **Semantic layer** | YAML table/view definitions and relations for Chinook; used by the reasoner. |
+| **Response builder** | Formats engine output (tables, chart path → base64) and sends to Slack. |
+| **External** | Postgres (Chinook DB), LangSmith (observability). |
+
+See **PROJECT_CONTEXT.md** for more detail.
+
 ## Project Structure
 
 ```

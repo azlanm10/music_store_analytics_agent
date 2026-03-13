@@ -1,7 +1,9 @@
-I'm connected to the *Chinook* music store dataset. You can ask me about:
+I'm connected to the *Chinook* database—a sample music store database. Here’s what’s in it (in plain terms):
+
 • *Artists* and *albums*
 • *Tracks*, *genres*, and *media types*
-• *Playlists* and which tracks are in them
+• *Playlists* and which tracks are in them (*playlist–track*)
 • *Customers*, *invoices*, and *invoice lines*
-• *Sales* and *revenue* (e.g. by artist, country, or over time)
 • *Employees*
+
+Ask me anything about the above—e.g. who has the most albums, revenue by artist, or top tracks in a playlist. Say *chart* or *graph* when you want a visualization instead of a table.
