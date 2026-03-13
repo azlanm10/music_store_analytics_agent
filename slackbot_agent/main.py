@@ -1,3 +1,6 @@
+"""
+Slack bot entry point: Bolt app, message handler, and flow (intake → engine → output → memory).
+"""
 
 import logging
 import os

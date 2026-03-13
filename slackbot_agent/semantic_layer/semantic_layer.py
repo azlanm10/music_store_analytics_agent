@@ -4,10 +4,6 @@ Semantic layer: pai.create() to register, pai.load() to get datasets, then Agent
 Flow: for each table/view, pai.load(path). If not found, read schema.yaml → pai.create() → pai.load(path).
 Sources list contains only what pai.load() returns; never append the return value of pai.create().
 
-The music-analytics view is included for relations (join graph). PandasAI may raise DuplicateAlias
-when building view SQL if the same table appears in multiple relations (e.g. album in album_to_artist
-and track_to_album). Set SKIP_MUSIC_ANALYTICS_VIEW=1 to load only the 11 tables if that occurs.
-
 After changing schema YAML: restart the app. On startup we clear PandasAI cache/registry.
 """
 
@@ -38,9 +34,6 @@ DATASET_NAMES = [
     "track",
     "music-analytics",
 ]
-
-# When VIEW_ONLY=1, load only the music-analytics view (no tables).
-VIEW_ONLY_DATASET = ["music-analytics"]
 
 
 def _base_dir() -> Path:
@@ -89,7 +82,7 @@ def _clear_pandasai_registry() -> None:
     """
     try:
         pai.clear_cache()
-    except Exception:  # noqa: S110
+    except Exception:  
         pass
     project_root = Path(__file__).resolve().parent.parent.parent
     # Project and home .pandasai and cache.db
@@ -123,21 +116,11 @@ def load_sources() -> list[Any]:
     Returns list of what pai.load() returns; pass to Agent(sources). Never use pai.create() return value.
     Clears PandasAI cache at start so a fresh run picks up current schema (like restarting the kernel).
     """
-    # _clear_pandasai_registry()
     base = _base_dir()
     connection = _db_connection()
     sources = []
 
-    view_only = os.getenv("VIEW_ONLY", "").strip().lower() in ("1", "true", "yes")
-    skip_view = os.getenv("SKIP_MUSIC_ANALYTICS_VIEW", "").strip().lower() in ("1", "true", "yes")
-
-    names_to_load = VIEW_ONLY_DATASET if view_only else DATASET_NAMES
-    if view_only:
-        logger.info("VIEW_ONLY=1: loading only music-analytics view")
-    for name in names_to_load:
-        if not view_only and skip_view and name == "music-analytics":
-            logger.info("Skipping music-analytics view (SKIP_MUSIC_ANALYTICS_VIEW=1)")
-            continue
+    for name in DATASET_NAMES:
         path_str = f"chinook/{name}"
         path = base / name / "schema.yaml"
 
@@ -210,7 +193,7 @@ def load_sources() -> list[Any]:
         except Exception:
             logger.warning("Missing: %s and pai.load failed", path)
 
-    expected = len(VIEW_ONLY_DATASET) if view_only else (len(DATASET_NAMES) - (1 if skip_view else 0))
+    expected = len(DATASET_NAMES)
     if len(sources) < expected:
         logger.warning(
             "Only %d/%d sources in list (expected chinook/album and the other %d). Missing ones: pai.load() may have returned None.",

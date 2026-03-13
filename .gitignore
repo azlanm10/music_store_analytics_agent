@@ -24,3 +24,6 @@ ENV/
 exports/
 pandasai.log
 tests/
+
+.pytest_cache/
+.cursor/

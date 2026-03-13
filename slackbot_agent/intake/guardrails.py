@@ -23,10 +23,18 @@ BLOCKED_PATTERNS = [
     r"update",
     r"insert",
     r"alter",
+    r"rename",
+    r"remove",
     r"truncate",
+    r"reset",
     r"ignore.?previous.?instructions",
     r"bypass",
     r"system.?prompt",
+    r"you.?are.?an",
+    r"you.?are.?now",
+    r"act.?as.?a",
+    r"modify",
+    r"change",
     r"hidden.?prompt"
 ]
 

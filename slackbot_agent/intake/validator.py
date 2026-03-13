@@ -22,7 +22,7 @@ def has_music_keywords(text: str) -> bool:
     """Return True if the text contains any music-store keyword (case-insensitive)."""
     if not text:
         return False
-    return any(kw in text.lower() for kw in MUSIC_KEYWORDS)
+    return any(keyword in text.lower() for keyword in MUSIC_KEYWORDS)
 
 
 def validate_query(query: str) -> dict[str, bool | str]:
