@@ -1,0 +1,19 @@
+name: media_type
+source:
+  type: postgres
+  connection:
+    host: localhost
+    port: 5432
+    database: chinook_auto_increment
+    user: postgres
+    password: '123456'
+  table: media_type
+description: The Media type table contains information about the media type of audio
+  and video files.
+columns:
+- name: media_type_id
+  type: integer
+  description: Unique identifier for the media type.
+- name: name
+  type: string
+  description: The name of the media type.

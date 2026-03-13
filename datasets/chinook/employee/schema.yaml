@@ -1,0 +1,58 @@
+name: employee
+source:
+  type: postgres
+  connection:
+    host: localhost
+    port: 5432
+    database: chinook_auto_increment
+    user: postgres
+    password: '123456'
+  table: employee
+description: The Employee table holds the employee details.
+columns:
+- name: employee_id
+  type: integer
+  description: Unique identifier for each employee in the table and this field is
+    not null.
+- name: first_name
+  type: string
+  description: First name of the employee and this field is not null.
+- name: last_name
+  type: string
+  description: Last name of the employee and this field is not null.
+- name: title
+  type: string
+  description: The title the employee holds.
+- name: reports_to
+  type: integer
+  description: The employee_id of the superior/manager the employee reports to.
+- name: birth_date
+  type: datetime
+  description: The birth date of the employee.
+- name: hire_date
+  type: datetime
+  description: The hire date of the employee.
+- name: address
+  type: string
+  description: The address of the employee.
+- name: city
+  type: string
+  description: The city the employee resides in.
+- name: state
+  type: string
+  description: The state the employee resides in.
+- name: country
+  type: string
+  description: The country the employee resides in.
+- name: postal_code
+  type: string
+  description: The postal code of the employee's address.
+- name: phone
+  type: string
+  description: Phone number of the employee.
+- name: fax
+  type: string
+  description: Fax number of the employee.
+- name: email
+  type: string
+  description: The email of the employee.

@@ -1,0 +1,19 @@
+name: playlist_track
+source:
+  type: postgres
+  connection:
+    host: localhost
+    port: 5432
+    database: chinook_auto_increment
+    user: postgres
+    password: '123456'
+  table: playlist_track
+description: This table links playlists and tracks together by their ids.
+columns:
+- name: playlist_id
+  type: integer
+  description: Unique identifier for the playlist; links to playlist. Foreign key
+    to playlist.
+- name: track_id
+  type: integer
+  description: Unique identifier for the track; links to track. Foreign key to track.

@@ -1,0 +1,18 @@
+name: music_analytics
+view: true
+description: Simplified view for artist–album relationship (one relation to avoid PandasAI DuplicateAlias).
+columns:
+- name: artist.artist_id
+  type: integer
+- name: artist.name
+  type: string
+- name: album.album_id
+  type: integer
+- name: album.title
+  type: string
+- name: album.artist_id
+  type: integer
+relations:
+- name: album_to_artist
+  from: album.artist_id
+  to: artist.artist_id

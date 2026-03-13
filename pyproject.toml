@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "music-store-analytics-agent"
+version = "0.1.0"
+description = "Conversational Slack agent for querying the Chinook music store database with natural language."
+readme = "README.md"
+packages = [{ include = "slackbot_agent" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+slack-bolt = "^1.27.0"
+pandas = "^2.0.3"
+pandasai ="^3.0.0"
+pandasai-litellm = "^0.0.1"
+pandasai-sql = "^0.1.7"
+sqlalchemy = "^2.0.0"
+psycopg2-binary = "^2.9.0"
+langgraph = "~0.2.0"
+langchain = "~0.3.0"
+langchain-openai = "~0.2.0"
+python-dotenv = "^1.0.0"
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

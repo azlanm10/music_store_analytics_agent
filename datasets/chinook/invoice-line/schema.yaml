@@ -1,0 +1,29 @@
+name: invoice_line
+source:
+  type: postgres
+  connection:
+    host: localhost
+    port: 5432
+    database: chinook_auto_increment
+    user: postgres
+    password: '123456'
+  table: invoice_line
+description: The invoice line table contains line items for each invoice, stating
+  the tracks purchased and quantities.
+columns:
+- name: invoice_line_id
+  type: integer
+  description: Unique identifier for the invoice line items.
+- name: invoice_id
+  type: integer
+  description: Links the invoice line items to the invoice it belongs to. Foreign
+    key to invoice.
+- name: track_id
+  type: integer
+  description: Links the invoice line item to the track. Foreign key to track.
+- name: unit_price
+  type: float
+  description: The price of the line item.
+- name: quantity
+  type: integer
+  description: The quantity of the line item.

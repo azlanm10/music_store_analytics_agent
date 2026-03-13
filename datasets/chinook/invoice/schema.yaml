@@ -1,0 +1,40 @@
+name: invoice
+source:
+  type: postgres
+  connection:
+    host: localhost
+    port: 5432
+    database: chinook_auto_increment
+    user: postgres
+    password: '123456'
+  table: invoice
+description: The invoice table contains billing information for customer purchases.
+  It aggregates sales data per transaction.
+columns:
+- name: invoice_id
+  type: integer
+  description: Unique identifier for the invoice.
+- name: customer_id
+  type: integer
+  description: Links the invoice to the customer it belongs to. Foreign key to customer.
+- name: invoice_date
+  type: datetime
+  description: The invoice date of the transaction.
+- name: billing_address
+  type: string
+  description: The billing address of the customer.
+- name: billing_city
+  type: string
+  description: The billing city of the customer.
+- name: billing_state
+  type: string
+  description: The billing state of the customer.
+- name: billing_country
+  type: string
+  description: The billing country of the customer.
+- name: billing_postal_code
+  type: string
+  description: The billing postal code of the customer's address.
+- name: total
+  type: integer
+  description: The total price of the customer transaction.

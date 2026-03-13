@@ -1,0 +1,18 @@
+name: playlist
+source:
+  type: postgres
+  connection:
+    host: localhost
+    port: 5432
+    database: chinook_auto_increment
+    user: postgres
+    password: '123456'
+  table: playlist
+description: The Playlist table contains information about playlists.
+columns:
+- name: playlist_id
+  type: integer
+  description: Unique identifier for the playlist.
+- name: name
+  type: string
+  description: The name of the playlist.

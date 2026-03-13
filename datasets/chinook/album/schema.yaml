@@ -1,0 +1,23 @@
+name: album
+source:
+  type: postgres
+  connection:
+    host: localhost
+    port: 5432
+    database: chinook_auto_increment
+    user: postgres
+    password: '123456'
+  table: album
+description: The Album table contains information about music albums. The record for
+  each album is linked to the artist.
+# Only base columns (no alias, no expression) so PandasAI load_head() can run SELECT ... LIMIT 5 without GROUP BY.
+columns:
+- name: album_id
+  type: integer
+  description: Unique identifier for each album in the table and this field is not null.
+- name: title
+  type: string
+  description: The name of the album and this field is not null.
+- name: artist_id
+  type: integer
+  description: Links each album to the artist (unique identifier). Foreign key to artist.

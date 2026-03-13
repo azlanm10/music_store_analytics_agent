@@ -1,0 +1,40 @@
+name: track
+source:
+  type: postgres
+  connection:
+    host: localhost
+    port: 5432
+    database: chinook_auto_increment
+    user: postgres
+    password: '123456'
+  table: track
+description: The track table contains detailed information for each song or media
+  file, including metadata like price, duration and size.
+columns:
+- name: track_id
+  type: integer
+  description: Unique identifier for the track.
+- name: name
+  type: string
+  description: The name of the track.
+- name: album_id
+  type: integer
+  description: Links the track to the album it belongs to. Foreign key to album.
+- name: media_type_id
+  type: integer
+  description: Links the track to its media type. Foreign key to media_type.
+- name: genre_id
+  type: integer
+  description: Links the track to the genre it belongs to. Foreign key to genre.
+- name: composer
+  type: string
+  description: The composer of the track.
+- name: milliseconds
+  type: integer
+  description: The length of the track in milliseconds.
+- name: bytes
+  type: integer
+  description: The size of the track in bytes.
+- name: unit_price
+  type: float
+  description: The price of the track.

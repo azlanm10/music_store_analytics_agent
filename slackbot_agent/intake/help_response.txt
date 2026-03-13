@@ -1,0 +1,7 @@
+I'm connected to the *Chinook* music store dataset. You can ask me about:
+• *Artists* and *albums*
+• *Tracks*, *genres*, and *media types*
+• *Playlists* and which tracks are in them
+• *Customers*, *invoices*, and *invoice lines*
+• *Sales* and *revenue* (e.g. by artist, country, or over time)
+• *Employees*

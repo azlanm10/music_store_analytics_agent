@@ -1,0 +1,18 @@
+name: genre
+source:
+  type: postgres
+  connection:
+    host: localhost
+    port: 5432
+    database: chinook_auto_increment
+    user: postgres
+    password: '123456'
+  table: genre
+description: The Genre table contains information about all genres.
+columns:
+- name: genre_id
+  type: integer
+  description: Unique identifier for the genre.
+- name: name
+  type: string
+  description: The name of the genre.

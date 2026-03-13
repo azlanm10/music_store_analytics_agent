@@ -1,0 +1,54 @@
+name: customer
+source:
+  type: postgres
+  connection:
+    host: localhost
+    port: 5432
+    database: chinook_auto_increment
+    user: postgres
+    password: '123456'
+  table: customer
+description: The Customer table holds the information about each customer along with
+  their contact details and a sales representative assigned to each customer.
+columns:
+- name: customer_id
+  type: integer
+  description: Unique identifier for each customer in the table and this field is
+    not null.
+- name: first_name
+  type: string
+  description: First name of the customer and this field is not null.
+- name: last_name
+  type: string
+  description: Last name of the customer.
+- name: company
+  type: string
+  description: The company the customer works for.
+- name: address
+  type: string
+  description: The address of the customer.
+- name: city
+  type: string
+  description: The city the customer resides in.
+- name: state
+  type: string
+  description: The state the customer resides in.
+- name: country
+  type: string
+  description: The country the customer resides in.
+- name: postal_code
+  type: string
+  description: The postal code of the customer's address.
+- name: phone
+  type: string
+  description: Phone number of the customer.
+- name: fax
+  type: string
+  description: Fax number of the customer.
+- name: email
+  type: string
+  description: The email of the customer and this field is not null.
+- name: support_rep_id
+  type: integer
+  description: Unique identifier of the sales representative assigned to the customer.
+    Foreign key to employee.
