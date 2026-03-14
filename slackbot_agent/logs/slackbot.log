@@ -23121,3 +23121,1005 @@ Index: []]
 2026-03-14 18:20:33,883 - INFO - slack_bolt.App - Connected to a new endpoint...
 2026-03-14 18:20:33,941 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 33a30903-7833-4c43-b677-c5e45bac9afd)
 2026-03-14 18:20:34,049 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 29bfa110-8ec6-477d-856d-410ef6f95d2b)
+2026-03-14 18:24:34,795 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/album
+2026-03-14 18:24:34,825 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/artist
+2026-03-14 18:24:34,880 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/customer
+2026-03-14 18:24:34,924 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/employee
+2026-03-14 18:24:34,945 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/genre
+2026-03-14 18:24:34,976 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/invoice
+2026-03-14 18:24:35,000 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/invoice-line
+2026-03-14 18:24:35,019 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/media-type
+2026-03-14 18:24:35,039 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/playlist
+2026-03-14 18:24:35,058 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/playlist-track
+2026-03-14 18:24:35,096 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/track
+2026-03-14 18:24:35,161 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/music-analytics
+2026-03-14 18:24:35,161 - INFO - slackbot_agent.semantic_layer.semantic_layer - Loaded 12 sources (all chinook tables + music_analytics)
+2026-03-14 18:24:35,162 - INFO - slackbot_agent.semantic_layer.semantic_layer - Sources: [PandasAI DataFrame(name='album', description='The Album table contains information about music albums. The record for each album is linked to the artist.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='artist', description='The artist table contains information about music artists.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='customer', description='The Customer table holds the information about each customer along with their contact details and a sales representative assigned to each customer.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='employee', description='The Employee table holds the employee details.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='genre', description='The Genre table contains information about all genres.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='invoice', description='The invoice table contains billing information for customer purchases. It aggregates sales data per transaction.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='invoice_line', description='The invoice line table contains line items for each invoice, stating the tracks purchased and quantities.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='media_type', description='The Media type table contains information about the media type of audio and video files.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='playlist', description='The Playlist table contains information about playlists.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='playlist_track', description='This table links playlists and tracks together by their ids.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='track', description='The track table contains detailed information for each song or media file, including metadata like price, duration and size.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='music_analytics', description='Simplified view for artist–album relationship (one relation to avoid PandasAI DuplicateAlias).')
+Empty VirtualDataFrame
+Columns: []
+Index: []]
+2026-03-14 18:24:35,186 - INFO - slackbot_agent.engine.reasoner - [PandasAI DataFrame(name='album', description='The Album table contains information about music albums. The record for each album is linked to the artist.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='artist', description='The artist table contains information about music artists.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='customer', description='The Customer table holds the information about each customer along with their contact details and a sales representative assigned to each customer.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='employee', description='The Employee table holds the employee details.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='genre', description='The Genre table contains information about all genres.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='invoice', description='The invoice table contains billing information for customer purchases. It aggregates sales data per transaction.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='invoice_line', description='The invoice line table contains line items for each invoice, stating the tracks purchased and quantities.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='media_type', description='The Media type table contains information about the media type of audio and video files.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='playlist', description='The Playlist table contains information about playlists.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='playlist_track', description='This table links playlists and tracks together by their ids.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='track', description='The track table contains detailed information for each song or media file, including metadata like price, duration and size.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='music_analytics', description='Simplified view for artist–album relationship (one relation to avoid PandasAI DuplicateAlias).')
+Empty VirtualDataFrame
+Columns: []
+Index: []]
+2026-03-14 18:24:35,210 - INFO - slackbot_agent.engine.reasoner - <pandasai.agent.base.Agent object at 0x000002320C09BE50>
+2026-03-14 18:24:36,706 - INFO - slack_bolt.App - A new session has been established (session id: 6d592544-c2af-409f-acbe-97de3e043ce4)
+2026-03-14 18:24:36,707 - INFO - slack_bolt.App - Bolt app is running!
+2026-03-14 18:24:36,763 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 6d592544-c2af-409f-acbe-97de3e043ce4)
+2026-03-14 18:47:43,797 - INFO - __main__ - Handling message events: {'token': 'vayIXExK3sDWwDUNvYUtm6bC', 'team_id': 'T0A920TA9B3', 'context_team_id': 'T0A920TA9B3', 'context_enterprise_id': None, 'api_app_id': 'A0AL2NKMT2Q', 'event': {'type': 'message', 'user': 'U0A8P2R8E5Q', 'ts': '1773514063.003749', 'client_msg_id': 'B69C9F29-894B-4172-A1C9-8A51F1A8F624', 'text': 'Hi', 'team': 'T0A920TA9B3', 'blocks': [{'type': 'rich_text', 'block_id': '4fvff', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'Hi'}]}]}], 'channel': 'D0AL32XBWA0', 'event_ts': '1773514063.003749', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev0AM0K338RF', 'event_time': 1773514063, 'authorizations': [{'enterprise_id': None, 'team_id': 'T0A920TA9B3', 'user_id': 'U0AKW1FMJN9', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMEE5MjBUQTlCMyIsImFpZCI6IkEwQUwyTktNVDJRIiwiY2lkIjoiRDBBTDMyWEJXQTAifQ'}
+2026-03-14 18:47:54,034 - INFO - __main__ - Handling message events: {'token': 'vayIXExK3sDWwDUNvYUtm6bC', 'team_id': 'T0A920TA9B3', 'context_team_id': 'T0A920TA9B3', 'context_enterprise_id': None, 'api_app_id': 'A0AL2NKMT2Q', 'event': {'type': 'message', 'user': 'U0A8P2R8E5Q', 'ts': '1773514072.636039', 'client_msg_id': 'C8B5E91C-B695-478E-8E09-938EBF5845C9', 'text': 'What can you answer?', 'team': 'T0A920TA9B3', 'blocks': [{'type': 'rich_text', 'block_id': 'hI/60', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'What can you answer'}, {'type': 'text', 'text': '?'}]}]}], 'channel': 'D0AL32XBWA0', 'event_ts': '1773514072.636039', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev0ALJ95P32R', 'event_time': 1773514072, 'authorizations': [{'enterprise_id': None, 'team_id': 'T0A920TA9B3', 'user_id': 'U0AKW1FMJN9', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMEE5MjBUQTlCMyIsImFpZCI6IkEwQUwyTktNVDJRIiwiY2lkIjoiRDBBTDMyWEJXQTAifQ'}
+2026-03-14 18:47:54,039 - INFO - slackbot_agent.intake.validator - Running validator
+2026-03-14 18:47:54,040 - WARNING - slackbot_agent.intake.validator - Validator failed: query outside music store domain
+2026-03-14 18:48:07,045 - INFO - __main__ - Handling message events: {'token': 'vayIXExK3sDWwDUNvYUtm6bC', 'team_id': 'T0A920TA9B3', 'context_team_id': 'T0A920TA9B3', 'context_enterprise_id': None, 'api_app_id': 'A0AL2NKMT2Q', 'event': {'type': 'message', 'user': 'U0A8P2R8E5Q', 'ts': '1773514085.283859', 'client_msg_id': 'F7DFBAEC-661E-4D7B-8A5B-9CB8E5C15849', 'text': 'What data do you have access to?', 'team': 'T0A920TA9B3', 'blocks': [{'type': 'rich_text', 'block_id': 'JuRo7', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'What data do you have access to?'}]}]}], 'channel': 'D0AL32XBWA0', 'event_ts': '1773514085.283859', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev0AL68L0TL7', 'event_time': 1773514085, 'authorizations': [{'enterprise_id': None, 'team_id': 'T0A920TA9B3', 'user_id': 'U0AKW1FMJN9', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMEE5MjBUQTlCMyIsImFpZCI6IkEwQUwyTktNVDJRIiwiY2lkIjoiRDBBTDMyWEJXQTAifQ'}
+2026-03-14 18:48:07,048 - INFO - slackbot_agent.intake.validator - Running validator
+2026-03-14 18:48:07,049 - WARNING - slackbot_agent.intake.validator - Validator failed: query outside music store domain
+2026-03-14 18:48:41,826 - INFO - __main__ - Handling message events: {'token': 'vayIXExK3sDWwDUNvYUtm6bC', 'team_id': 'T0A920TA9B3', 'context_team_id': 'T0A920TA9B3', 'context_enterprise_id': None, 'api_app_id': 'A0AL2NKMT2Q', 'event': {'type': 'message', 'user': 'U0A8P2R8E5Q', 'ts': '1773514120.740609', 'client_msg_id': 'C045FD5A-E255-4685-A560-C4A696D9BDDB', 'text': 'Which album has the most revenue?', 'team': 'T0A920TA9B3', 'blocks': [{'type': 'rich_text', 'block_id': 'bAQ0N', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'Which album has the most revenue?'}]}]}], 'channel': 'D0AL32XBWA0', 'event_ts': '1773514120.740609', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev0ALR9N9X1A', 'event_time': 1773514120, 'authorizations': [{'enterprise_id': None, 'team_id': 'T0A920TA9B3', 'user_id': 'U0AKW1FMJN9', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMEE5MjBUQTlCMyIsImFpZCI6IkEwQUwyTktNVDJRIiwiY2lkIjoiRDBBTDMyWEJXQTAifQ'}
+2026-03-14 18:48:41,830 - INFO - slackbot_agent.intake.validator - Running validator
+2026-03-14 18:48:41,831 - INFO - slackbot_agent.intake.validator - Validator passed
+2026-03-14 18:48:41,832 - INFO - slackbot_agent.intake.guardrails - Checking for PII
+2026-03-14 18:48:41,833 - INFO - slackbot_agent.intake.guardrails - Checking for blocked patterns
+2026-03-14 18:48:41,834 - INFO - slackbot_agent.engine.reasoner - Calling agent.chat with question: which album has the most revenue?
+2026-03-14 18:48:41,836 - INFO - pandasai.helpers.logger - Question: which album has the most revenue?
+2026-03-14 18:48:41,990 - INFO - pandasai.helpers.logger - Running PandasAI with litellm LLM...
+2026-03-14 18:48:41,994 - INFO - pandasai.helpers.logger - Prompt ID: 2ff2cf1c-c47f-4080-9be7-aea03e178d5e
+2026-03-14 18:48:42,011 - INFO - pandasai.helpers.logger - Generating new code...
+2026-03-14 18:48:45,069 - INFO - pandasai.helpers.logger - Using Prompt: <tables>
+
+<table dialect="postgres" table_name="album" description="The Album table contains information about music albums. The record for each album is linked to the artist." columns="[{"name": "album_id", "type": "integer", "description": "Unique identifier for each album in the table and this field is not null.", "expression": null, "alias": null}, {"name": "title", "type": "string", "description": "The name of the album and this field is not null.", "expression": null, "alias": null}, {"name": "artist_id", "type": "integer", "description": "Links each album to the artist (unique identifier). Foreign key to artist.", "expression": null, "alias": null}]" dimensions="347x0">
+album_id,title,artist_id
+1,For Those About To Rock We Salute You,1
+2,Balls to the Wall,2
+3,Restless and Wild,2
+4,Let There Be Rock,1
+5,Big Ones,3
+</table>
+
+
+<table dialect="postgres" table_name="artist" description="The artist table contains information about music artists." columns="[{"name": "artist_id", "type": "integer", "description": "Unique identifier for each artist in the table and this field is not null.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the artist.", "expression": null, "alias": null}]" dimensions="275x0">
+artist_id,name
+1,AC/DC
+2,Accept
+3,Aerosmith
+4,Alanis Morissette
+5,Alice In Chains
+</table>
+
+
+<table dialect="postgres" table_name="customer" description="The Customer table holds the information about each customer along with their contact details and a sales representative assigned to each customer." columns="[{"name": "customer_id", "type": "integer", "description": "Unique identifier for each customer in the table and this field is not null.", "expression": null, "alias": null}, {"name": "first_name", "type": "string", "description": "First name of the customer and this field is not null.", "expression": null, "alias": null}, {"name": "last_name", "type": "string", "description": "Last name of the customer.", "expression": null, "alias": null}, {"name": "company", "type": "string", "description": "The company the customer works for.", "expression": null, "alias": null}, {"name": "address", "type": "string", "description": "The address of the customer.", "expression": null, "alias": null}, {"name": "city", "type": "string", "description": "The city the customer resides in.", "expression": null, "alias": null}, {"name": "state", "type": "string", "description": "The state the customer resides in.", "expression": null, "alias": null}, {"name": "country", "type": "string", "description": "The country the customer resides in.", "expression": null, "alias": null}, {"name": "postal_code", "type": "string", "description": "The postal code of the customer's address.", "expression": null, "alias": null}, {"name": "phone", "type": "string", "description": "Phone number of the customer.", "expression": null, "alias": null}, {"name": "fax", "type": "string", "description": "Fax number of the customer.", "expression": null, "alias": null}, {"name": "email", "type": "string", "description": "The email of the customer and this field is not null.", "expression": null, "alias": null}, {"name": "support_rep_id", "type": "integer", "description": "Unique identifier of the sales representative assigned to the customer. Foreign key to employee.", "expression": null, "alias": null}]" dimensions="59x0">
+customer_id,first_name,last_name,company,address,city,state,country,postal_code,phone,fax,email,support_rep_id
+1,Luís,Gonçalves,Embraer - Empresa Brasileira de Aeronáutica S.A.,"Av. Brigadeiro Faria Lima, 2170",São José dos Campos,SP,Brazil,12227-000,+55 (12) 3923-5555,+55 (12) 3923-5566,luisg@embraer.com.br,3
+2,Leonie,Köhler,,Theodor-Heuss-Straße 34,Stuttgart,,Germany,70174,+49 0711 2842222,,leonekohler@surfeu.de,5
+3,François,Tremblay,,1498 rue Bélanger,Montréal,QC,Canada,H2G 1A7,+1 (514) 721-4711,,ftremblay@gmail.com,3
+4,Bjørn,Hansen,,Ullevålsveien 14,Oslo,,Norway,0171,+47 22 44 22 22,,bjorn.hansen@yahoo.no,4
+5,František,Wichterlová,JetBrains s.r.o.,Klanova 9/506,Prague,,Czech Republic,14700,+420 2 4172 5555,+420 2 4172 5555,frantisekw@jetbrains.com,4
+</table>
+
+
+<table dialect="postgres" table_name="employee" description="The Employee table holds the employee details." columns="[{"name": "employee_id", "type": "integer", "description": "Unique identifier for each employee in the table and this field is not null.", "expression": null, "alias": null}, {"name": "first_name", "type": "string", "description": "First name of the employee and this field is not null.", "expression": null, "alias": null}, {"name": "last_name", "type": "string", "description": "Last name of the employee and this field is not null.", "expression": null, "alias": null}, {"name": "title", "type": "string", "description": "The title the employee holds.", "expression": null, "alias": null}, {"name": "reports_to", "type": "integer", "description": "The employee_id of the superior/manager the employee reports to.", "expression": null, "alias": null}, {"name": "birth_date", "type": "datetime", "description": "The birth date of the employee.", "expression": null, "alias": null}, {"name": "hire_date", "type": "datetime", "description": "The hire date of the employee.", "expression": null, "alias": null}, {"name": "address", "type": "string", "description": "The address of the employee.", "expression": null, "alias": null}, {"name": "city", "type": "string", "description": "The city the employee resides in.", "expression": null, "alias": null}, {"name": "state", "type": "string", "description": "The state the employee resides in.", "expression": null, "alias": null}, {"name": "country", "type": "string", "description": "The country the employee resides in.", "expression": null, "alias": null}, {"name": "postal_code", "type": "string", "description": "The postal code of the employee's address.", "expression": null, "alias": null}, {"name": "phone", "type": "string", "description": "Phone number of the employee.", "expression": null, "alias": null}, {"name": "fax", "type": "string", "description": "Fax number of the employee.", "expression": null, "alias": null}, {"name": "email", "type": "string", "description": "The email of the employee.", "expression": null, "alias": null}]" dimensions="8x0">
+employee_id,first_name,last_name,title,reports_to,birth_date,hire_date,address,city,state,country,postal_code,phone,fax,email
+1,Andrew,Adams,General Manager,,1962-02-18,2002-08-14,11120 Jasper Ave NW,Edmonton,AB,Canada,T5K 2N1,+1 (780) 428-9482,+1 (780) 428-3457,andrew@chinookcorp.com
+2,Nancy,Edwards,Sales Manager,1.0,1958-12-08,2002-05-01,825 8 Ave SW,Calgary,AB,Canada,T2P 2T3,+1 (403) 262-3443,+1 (403) 262-3322,nancy@chinookcorp.com
+3,Jane,Peacock,Sales Support Agent,2.0,1973-08-29,2002-04-01,1111 6 Ave SW,Calgary,AB,Canada,T2P 5M5,+1 (403) 262-3443,+1 (403) 262-6712,jane@chinookcorp.com
+4,Margaret,Park,Sales Support Agent,2.0,1947-09-19,2003-05-03,683 10 Street SW,Calgary,AB,Canada,T2P 5G3,+1 (403) 263-4423,+1 (403) 263-4289,margaret@chinookcorp.com
+5,Steve,Johnson,Sales Support Agent,2.0,1965-03-03,2003-10-17,7727B 41 Ave,Calgary,AB,Canada,T3B 1Y7,1 (780) 836-9987,1 (780) 836-9543,steve@chinookcorp.com
+</table>
+
+
+<table dialect="postgres" table_name="genre" description="The Genre table contains information about all genres." columns="[{"name": "genre_id", "type": "integer", "description": "Unique identifier for the genre.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the genre.", "expression": null, "alias": null}]" dimensions="25x0">
+genre_id,name
+1,Rock
+2,Jazz
+3,Metal
+4,Alternative & Punk
+5,Rock And Roll
+</table>
+
+
+<table dialect="postgres" table_name="invoice" description="The invoice table contains billing information for customer purchases. It aggregates sales data per transaction." columns="[{"name": "invoice_id", "type": "integer", "description": "Unique identifier for the invoice.", "expression": null, "alias": null}, {"name": "customer_id", "type": "integer", "description": "Links the invoice to the customer it belongs to. Foreign key to customer.", "expression": null, "alias": null}, {"name": "invoice_date", "type": "datetime", "description": "The invoice date of the transaction.", "expression": null, "alias": null}, {"name": "billing_address", "type": "string", "description": "The billing address of the customer.", "expression": null, "alias": null}, {"name": "billing_city", "type": "string", "description": "The billing city of the customer.", "expression": null, "alias": null}, {"name": "billing_state", "type": "string", "description": "The billing state of the customer.", "expression": null, "alias": null}, {"name": "billing_country", "type": "string", "description": "The billing country of the customer.", "expression": null, "alias": null}, {"name": "billing_postal_code", "type": "string", "description": "The billing postal code of the customer's address.", "expression": null, "alias": null}, {"name": "total", "type": "integer", "description": "The total price of the customer transaction.", "expression": null, "alias": null}]" dimensions="412x0">
+invoice_id,customer_id,invoice_date,billing_address,billing_city,billing_state,billing_country,billing_postal_code,total
+1,2,2021-01-01,Theodor-Heuss-Straße 34,Stuttgart,,Germany,70174,1.98
+2,4,2021-01-02,Ullevålsveien 14,Oslo,,Norway,0171,3.96
+3,8,2021-01-03,Grétrystraat 63,Brussels,,Belgium,1000,5.94
+4,14,2021-01-06,8210 111 ST NW,Edmonton,AB,Canada,T6G 2C7,8.91
+5,23,2021-01-11,69 Salem Street,Boston,MA,USA,2113,13.86
+</table>
+
+
+<table dialect="postgres" table_name="invoice_line" description="The invoice line table contains line items for each invoice, stating the tracks purchased and quantities." columns="[{"name": "invoice_line_id", "type": "integer", "description": "Unique identifier for the invoice line items.", "expression": null, "alias": null}, {"name": "invoice_id", "type": "integer", "description": "Links the invoice line items to the invoice it belongs to. Foreign key to invoice.", "expression": null, "alias": null}, {"name": "track_id", "type": "integer", "description": "Links the invoice line item to the track. Foreign key to track.", "expression": null, "alias": null}, {"name": "unit_price", "type": "float", "description": "The price of the line item.", "expression": null, "alias": null}, {"name": "quantity", "type": "integer", "description": "The quantity of the line item.", "expression": null, "alias": null}]" dimensions="2240x0">
+invoice_line_id,invoice_id,track_id,unit_price,quantity
+1.0,1.0,2.0,0.99,1.0
+2.0,1.0,4.0,0.99,1.0
+3.0,2.0,6.0,0.99,1.0
+4.0,2.0,8.0,0.99,1.0
+5.0,2.0,10.0,0.99,1.0
+</table>
+
+
+<table dialect="postgres" table_name="media_type" description="The Media type table contains information about the media type of audio and video files." columns="[{"name": "media_type_id", "type": "integer", "description": "Unique identifier for the media type.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the media type.", "expression": null, "alias": null}]" dimensions="5x0">
+media_type_id,name
+1,MPEG audio file
+2,Protected AAC audio file
+3,Protected MPEG-4 video file
+4,Purchased AAC audio file
+5,AAC audio file
+</table>
+
+
+<table dialect="postgres" table_name="playlist" description="The Playlist table contains information about playlists." columns="[{"name": "playlist_id", "type": "integer", "description": "Unique identifier for the playlist.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the playlist.", "expression": null, "alias": null}]" dimensions="18x0">
+playlist_id,name
+1,Music
+2,Movies
+3,TV Shows
+4,Audiobooks
+5,90’s Music
+</table>
+
+
+<table dialect="postgres" table_name="playlist_track" description="This table links playlists and tracks together by their ids." columns="[{"name": "playlist_id", "type": "integer", "description": "Unique identifier for the playlist; links to playlist. Foreign key to playlist.", "expression": null, "alias": null}, {"name": "track_id", "type": "integer", "description": "Unique identifier for the track; links to track. Foreign key to track.", "expression": null, "alias": null}]" dimensions="8715x0">
+playlist_id,track_id
+1,3402
+1,3389
+1,3390
+1,3391
+1,3392
+</table>
+
+
+<table dialect="postgres" table_name="track" description="The track table contains detailed information for each song or media file, including metadata like price, duration and size." columns="[{"name": "track_id", "type": "integer", "description": "Unique identifier for the track.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the track.", "expression": null, "alias": null}, {"name": "album_id", "type": "integer", "description": "Links the track to the album it belongs to. Foreign key to album.", "expression": null, "alias": null}, {"name": "media_type_id", "type": "integer", "description": "Links the track to its media type. Foreign key to media_type.", "expression": null, "alias": null}, {"name": "genre_id", "type": "integer", "description": "Links the track to the genre it belongs to. Foreign key to genre.", "expression": null, "alias": null}, {"name": "composer", "type": "string", "description": "The composer of the track.", "expression": null, "alias": null}, {"name": "milliseconds", "type": "integer", "description": "The length of the track in milliseconds.", "expression": null, "alias": null}, {"name": "bytes", "type": "integer", "description": "The size of the track in bytes.", "expression": null, "alias": null}, {"name": "unit_price", "type": "float", "description": "The price of the track.", "expression": null, "alias": null}]" dimensions="3503x0">
+track_id,name,album_id,media_type_id,genre_id,composer,milliseconds,bytes,unit_price
+1,For Those About To Rock (We Salute You),1,1,1,"Angus Young, Malcolm Young, Brian Johnson",343719,11170334,0.99
+2,Balls to the Wall,2,2,1,"U. Dirkschneider, W. Hoffmann, H. Frank, P. Baltes, S. Kaufmann, G. Hoffmann",342562,5510424,0.99
+3,Fast As a Shark,3,2,1,"F. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman",230619,3990994,0.99
+4,Restless and Wild,3,2,1,"F. Baltes, R.A. Smith-Diesel, S. Kaufman, U. Dirkscneider & W. Hoffman",252051,4331779,0.99
+5,Princess of the Dawn,3,2,1,Deaffy & R.A. Smith-Diesel,375418,6290521,0.99
+</table>
+
+
+<table dialect="postgres" table_name="music_analytics" description="Simplified view for artist–album relationship (one relation to avoid PandasAI DuplicateAlias)." columns="[{"name": "artist.artist_id", "type": "integer", "description": null, "expression": null, "alias": null}, {"name": "artist.name", "type": "string", "description": null, "expression": null, "alias": null}, {"name": "album.album_id", "type": "integer", "description": null, "expression": null, "alias": null}, {"name": "album.title", "type": "string", "description": null, "expression": null, "alias": null}, {"name": "album.artist_id", "type": "integer", "description": null, "expression": null, "alias": null}]" dimensions="347x0">
+artist_artist_id,artist_name,album_album_id,album_title,album_artist_id
+1,AC/DC,1,For Those About To Rock We Salute You,1
+1,AC/DC,4,Let There Be Rock,1
+2,Accept,2,Balls to the Wall,2
+2,Accept,3,Restless and Wild,2
+3,Aerosmith,5,Big Ones,3
+</table>
+
+
+</tables>
+
+The following functions have already been provided. Please use them as needed and do not redefine them.
+<function>
+def execute_sql_query(sql_query: str) -> pd.DataFrame
+    """This method connects to the database, executes the sql query and returns the dataframe"""
+</function>
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ which album has the most revenue?
+
+At the end, declare "result" variable as a dictionary of type and value in the following format:
+
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+
+
+Generate python code and return full updated code:
+
+### Note: Use only relevant table for query and do aggregation, sorting, joins and grouby through sql query
+2026-03-14 18:48:53,424 - INFO - pandasai.helpers.logger - Code Generated:
+# TODO: import the required dependencies
+import pandas as pd
+
+# Execute SQL query to find the album with the most revenue
+sql_query = """
+SELECT a.title AS album_title, SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+GROUP BY a.album_id, a.title
+ORDER BY total_revenue DESC
+LIMIT 1;
+"""
+
+# Fetch the result into a DataFrame
+result_df = execute_sql_query(sql_query)
+
+# Retrieve the album title and revenue from the DataFrame
+album_title = result_df.iloc[0]['album_title']
+total_revenue = result_df.iloc[0]['total_revenue']
+
+# Declare result var:
+result = {
+    "type": "string",
+    "value": f"The album with the most revenue is '{album_title}' with a total revenue of ${total_revenue:.2f}."
+}
+2026-03-14 18:48:53,432 - INFO - pandasai.helpers.logger - Validating code requirements...
+2026-03-14 18:48:53,439 - INFO - pandasai.helpers.logger - Code validation successful.
+2026-03-14 18:48:53,444 - INFO - pandasai.helpers.logger - Cleaning the generated code...
+2026-03-14 18:48:53,453 - INFO - pandasai.helpers.logger - Executing code: import pandas as pd
+sql_query = """
+SELECT a.title AS album_title, SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+GROUP BY a.album_id, a.title
+ORDER BY total_revenue DESC
+LIMIT 1;
+"""
+result_df = execute_sql_query(sql_query)
+album_title = result_df.iloc[0]['album_title']
+total_revenue = result_df.iloc[0]['total_revenue']
+result = {'type': 'string', 'value': f"The album with the most revenue is '{album_title}' with a total revenue of ${total_revenue:.2f}."}
+2026-03-14 18:48:54,728 - INFO - pandasai.helpers.logger - Response generated successfully.
+2026-03-14 18:49:49,235 - INFO - __main__ - Handling message events: {'token': 'vayIXExK3sDWwDUNvYUtm6bC', 'team_id': 'T0A920TA9B3', 'context_team_id': 'T0A920TA9B3', 'context_enterprise_id': None, 'api_app_id': 'A0AL2NKMT2Q', 'event': {'type': 'message', 'user': 'U0A8P2R8E5Q', 'ts': '1773514187.993469', 'client_msg_id': 'DDB8FEB7-B559-4D2D-B09A-33C9A36E6554', 'text': 'Tell me the top 10 artists in the Rock Genre', 'team': 'T0A920TA9B3', 'blocks': [{'type': 'rich_text', 'block_id': 'uk4Jc', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'Tell me the top 10 artists in the Rock Genre'}]}]}], 'channel': 'D0AL32XBWA0', 'event_ts': '1773514187.993469', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev0AMG0E5Y3S', 'event_time': 1773514187, 'authorizations': [{'enterprise_id': None, 'team_id': 'T0A920TA9B3', 'user_id': 'U0AKW1FMJN9', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMEE5MjBUQTlCMyIsImFpZCI6IkEwQUwyTktNVDJRIiwiY2lkIjoiRDBBTDMyWEJXQTAifQ'}
+2026-03-14 18:49:49,237 - INFO - slackbot_agent.intake.validator - Running validator
+2026-03-14 18:49:49,237 - INFO - slackbot_agent.intake.validator - Validator passed
+2026-03-14 18:49:49,237 - INFO - slackbot_agent.intake.guardrails - Checking for PII
+2026-03-14 18:49:49,238 - INFO - slackbot_agent.intake.guardrails - Checking for blocked patterns
+2026-03-14 18:49:49,238 - INFO - slackbot_agent.engine.reasoner - Calling agent.follow_up with question: tell me the top 10 artists in the rock genre
+2026-03-14 18:49:49,239 - INFO - pandasai.helpers.logger - Question: tell me the top 10 artists in the rock genre
+2026-03-14 18:49:49,242 - INFO - pandasai.helpers.logger - Running PandasAI with litellm LLM...
+2026-03-14 18:49:49,246 - INFO - pandasai.helpers.logger - Prompt ID: 26729a1c-9657-4e6a-9c72-b98962aba783
+2026-03-14 18:49:49,250 - INFO - pandasai.helpers.logger - Generating new code...
+2026-03-14 18:49:50,138 - INFO - pandasai.helpers.logger - Using Prompt: <tables>
+
+<table dialect="postgres" table_name="album" description="The Album table contains information about music albums. The record for each album is linked to the artist." columns="[{"name": "album_id", "type": "integer", "description": "Unique identifier for each album in the table and this field is not null.", "expression": null, "alias": null}, {"name": "title", "type": "string", "description": "The name of the album and this field is not null.", "expression": null, "alias": null}, {"name": "artist_id", "type": "integer", "description": "Links each album to the artist (unique identifier). Foreign key to artist.", "expression": null, "alias": null}]" dimensions="347x0">
+album_id,title,artist_id
+1,For Those About To Rock We Salute You,1
+2,Balls to the Wall,2
+3,Restless and Wild,2
+4,Let There Be Rock,1
+5,Big Ones,3
+</table>
+
+
+<table dialect="postgres" table_name="artist" description="The artist table contains information about music artists." columns="[{"name": "artist_id", "type": "integer", "description": "Unique identifier for each artist in the table and this field is not null.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the artist.", "expression": null, "alias": null}]" dimensions="275x0">
+artist_id,name
+1,AC/DC
+2,Accept
+3,Aerosmith
+4,Alanis Morissette
+5,Alice In Chains
+</table>
+
+
+<table dialect="postgres" table_name="customer" description="The Customer table holds the information about each customer along with their contact details and a sales representative assigned to each customer." columns="[{"name": "customer_id", "type": "integer", "description": "Unique identifier for each customer in the table and this field is not null.", "expression": null, "alias": null}, {"name": "first_name", "type": "string", "description": "First name of the customer and this field is not null.", "expression": null, "alias": null}, {"name": "last_name", "type": "string", "description": "Last name of the customer.", "expression": null, "alias": null}, {"name": "company", "type": "string", "description": "The company the customer works for.", "expression": null, "alias": null}, {"name": "address", "type": "string", "description": "The address of the customer.", "expression": null, "alias": null}, {"name": "city", "type": "string", "description": "The city the customer resides in.", "expression": null, "alias": null}, {"name": "state", "type": "string", "description": "The state the customer resides in.", "expression": null, "alias": null}, {"name": "country", "type": "string", "description": "The country the customer resides in.", "expression": null, "alias": null}, {"name": "postal_code", "type": "string", "description": "The postal code of the customer's address.", "expression": null, "alias": null}, {"name": "phone", "type": "string", "description": "Phone number of the customer.", "expression": null, "alias": null}, {"name": "fax", "type": "string", "description": "Fax number of the customer.", "expression": null, "alias": null}, {"name": "email", "type": "string", "description": "The email of the customer and this field is not null.", "expression": null, "alias": null}, {"name": "support_rep_id", "type": "integer", "description": "Unique identifier of the sales representative assigned to the customer. Foreign key to employee.", "expression": null, "alias": null}]" dimensions="59x0">
+customer_id,first_name,last_name,company,address,city,state,country,postal_code,phone,fax,email,support_rep_id
+1,Luís,Gonçalves,Embraer - Empresa Brasileira de Aeronáutica S.A.,"Av. Brigadeiro Faria Lima, 2170",São José dos Campos,SP,Brazil,12227-000,+55 (12) 3923-5555,+55 (12) 3923-5566,luisg@embraer.com.br,3
+2,Leonie,Köhler,,Theodor-Heuss-Straße 34,Stuttgart,,Germany,70174,+49 0711 2842222,,leonekohler@surfeu.de,5
+3,François,Tremblay,,1498 rue Bélanger,Montréal,QC,Canada,H2G 1A7,+1 (514) 721-4711,,ftremblay@gmail.com,3
+4,Bjørn,Hansen,,Ullevålsveien 14,Oslo,,Norway,0171,+47 22 44 22 22,,bjorn.hansen@yahoo.no,4
+5,František,Wichterlová,JetBrains s.r.o.,Klanova 9/506,Prague,,Czech Republic,14700,+420 2 4172 5555,+420 2 4172 5555,frantisekw@jetbrains.com,4
+</table>
+
+
+<table dialect="postgres" table_name="employee" description="The Employee table holds the employee details." columns="[{"name": "employee_id", "type": "integer", "description": "Unique identifier for each employee in the table and this field is not null.", "expression": null, "alias": null}, {"name": "first_name", "type": "string", "description": "First name of the employee and this field is not null.", "expression": null, "alias": null}, {"name": "last_name", "type": "string", "description": "Last name of the employee and this field is not null.", "expression": null, "alias": null}, {"name": "title", "type": "string", "description": "The title the employee holds.", "expression": null, "alias": null}, {"name": "reports_to", "type": "integer", "description": "The employee_id of the superior/manager the employee reports to.", "expression": null, "alias": null}, {"name": "birth_date", "type": "datetime", "description": "The birth date of the employee.", "expression": null, "alias": null}, {"name": "hire_date", "type": "datetime", "description": "The hire date of the employee.", "expression": null, "alias": null}, {"name": "address", "type": "string", "description": "The address of the employee.", "expression": null, "alias": null}, {"name": "city", "type": "string", "description": "The city the employee resides in.", "expression": null, "alias": null}, {"name": "state", "type": "string", "description": "The state the employee resides in.", "expression": null, "alias": null}, {"name": "country", "type": "string", "description": "The country the employee resides in.", "expression": null, "alias": null}, {"name": "postal_code", "type": "string", "description": "The postal code of the employee's address.", "expression": null, "alias": null}, {"name": "phone", "type": "string", "description": "Phone number of the employee.", "expression": null, "alias": null}, {"name": "fax", "type": "string", "description": "Fax number of the employee.", "expression": null, "alias": null}, {"name": "email", "type": "string", "description": "The email of the employee.", "expression": null, "alias": null}]" dimensions="8x0">
+employee_id,first_name,last_name,title,reports_to,birth_date,hire_date,address,city,state,country,postal_code,phone,fax,email
+1,Andrew,Adams,General Manager,,1962-02-18,2002-08-14,11120 Jasper Ave NW,Edmonton,AB,Canada,T5K 2N1,+1 (780) 428-9482,+1 (780) 428-3457,andrew@chinookcorp.com
+2,Nancy,Edwards,Sales Manager,1.0,1958-12-08,2002-05-01,825 8 Ave SW,Calgary,AB,Canada,T2P 2T3,+1 (403) 262-3443,+1 (403) 262-3322,nancy@chinookcorp.com
+3,Jane,Peacock,Sales Support Agent,2.0,1973-08-29,2002-04-01,1111 6 Ave SW,Calgary,AB,Canada,T2P 5M5,+1 (403) 262-3443,+1 (403) 262-6712,jane@chinookcorp.com
+4,Margaret,Park,Sales Support Agent,2.0,1947-09-19,2003-05-03,683 10 Street SW,Calgary,AB,Canada,T2P 5G3,+1 (403) 263-4423,+1 (403) 263-4289,margaret@chinookcorp.com
+5,Steve,Johnson,Sales Support Agent,2.0,1965-03-03,2003-10-17,7727B 41 Ave,Calgary,AB,Canada,T3B 1Y7,1 (780) 836-9987,1 (780) 836-9543,steve@chinookcorp.com
+</table>
+
+
+<table dialect="postgres" table_name="genre" description="The Genre table contains information about all genres." columns="[{"name": "genre_id", "type": "integer", "description": "Unique identifier for the genre.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the genre.", "expression": null, "alias": null}]" dimensions="25x0">
+genre_id,name
+1,Rock
+2,Jazz
+3,Metal
+4,Alternative & Punk
+5,Rock And Roll
+</table>
+
+
+<table dialect="postgres" table_name="invoice" description="The invoice table contains billing information for customer purchases. It aggregates sales data per transaction." columns="[{"name": "invoice_id", "type": "integer", "description": "Unique identifier for the invoice.", "expression": null, "alias": null}, {"name": "customer_id", "type": "integer", "description": "Links the invoice to the customer it belongs to. Foreign key to customer.", "expression": null, "alias": null}, {"name": "invoice_date", "type": "datetime", "description": "The invoice date of the transaction.", "expression": null, "alias": null}, {"name": "billing_address", "type": "string", "description": "The billing address of the customer.", "expression": null, "alias": null}, {"name": "billing_city", "type": "string", "description": "The billing city of the customer.", "expression": null, "alias": null}, {"name": "billing_state", "type": "string", "description": "The billing state of the customer.", "expression": null, "alias": null}, {"name": "billing_country", "type": "string", "description": "The billing country of the customer.", "expression": null, "alias": null}, {"name": "billing_postal_code", "type": "string", "description": "The billing postal code of the customer's address.", "expression": null, "alias": null}, {"name": "total", "type": "integer", "description": "The total price of the customer transaction.", "expression": null, "alias": null}]" dimensions="412x0">
+invoice_id,customer_id,invoice_date,billing_address,billing_city,billing_state,billing_country,billing_postal_code,total
+1,2,2021-01-01,Theodor-Heuss-Straße 34,Stuttgart,,Germany,70174,1.98
+2,4,2021-01-02,Ullevålsveien 14,Oslo,,Norway,0171,3.96
+3,8,2021-01-03,Grétrystraat 63,Brussels,,Belgium,1000,5.94
+4,14,2021-01-06,8210 111 ST NW,Edmonton,AB,Canada,T6G 2C7,8.91
+5,23,2021-01-11,69 Salem Street,Boston,MA,USA,2113,13.86
+</table>
+
+
+<table dialect="postgres" table_name="invoice_line" description="The invoice line table contains line items for each invoice, stating the tracks purchased and quantities." columns="[{"name": "invoice_line_id", "type": "integer", "description": "Unique identifier for the invoice line items.", "expression": null, "alias": null}, {"name": "invoice_id", "type": "integer", "description": "Links the invoice line items to the invoice it belongs to. Foreign key to invoice.", "expression": null, "alias": null}, {"name": "track_id", "type": "integer", "description": "Links the invoice line item to the track. Foreign key to track.", "expression": null, "alias": null}, {"name": "unit_price", "type": "float", "description": "The price of the line item.", "expression": null, "alias": null}, {"name": "quantity", "type": "integer", "description": "The quantity of the line item.", "expression": null, "alias": null}]" dimensions="2240x0">
+invoice_line_id,invoice_id,track_id,unit_price,quantity
+1.0,1.0,2.0,0.99,1.0
+2.0,1.0,4.0,0.99,1.0
+3.0,2.0,6.0,0.99,1.0
+4.0,2.0,8.0,0.99,1.0
+5.0,2.0,10.0,0.99,1.0
+</table>
+
+
+<table dialect="postgres" table_name="media_type" description="The Media type table contains information about the media type of audio and video files." columns="[{"name": "media_type_id", "type": "integer", "description": "Unique identifier for the media type.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the media type.", "expression": null, "alias": null}]" dimensions="5x0">
+media_type_id,name
+1,MPEG audio file
+2,Protected AAC audio file
+3,Protected MPEG-4 video file
+4,Purchased AAC audio file
+5,AAC audio file
+</table>
+
+
+<table dialect="postgres" table_name="playlist" description="The Playlist table contains information about playlists." columns="[{"name": "playlist_id", "type": "integer", "description": "Unique identifier for the playlist.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the playlist.", "expression": null, "alias": null}]" dimensions="18x0">
+playlist_id,name
+1,Music
+2,Movies
+3,TV Shows
+4,Audiobooks
+5,90’s Music
+</table>
+
+
+<table dialect="postgres" table_name="playlist_track" description="This table links playlists and tracks together by their ids." columns="[{"name": "playlist_id", "type": "integer", "description": "Unique identifier for the playlist; links to playlist. Foreign key to playlist.", "expression": null, "alias": null}, {"name": "track_id", "type": "integer", "description": "Unique identifier for the track; links to track. Foreign key to track.", "expression": null, "alias": null}]" dimensions="8715x0">
+playlist_id,track_id
+1,3402
+1,3389
+1,3390
+1,3391
+1,3392
+</table>
+
+
+<table dialect="postgres" table_name="track" description="The track table contains detailed information for each song or media file, including metadata like price, duration and size." columns="[{"name": "track_id", "type": "integer", "description": "Unique identifier for the track.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the track.", "expression": null, "alias": null}, {"name": "album_id", "type": "integer", "description": "Links the track to the album it belongs to. Foreign key to album.", "expression": null, "alias": null}, {"name": "media_type_id", "type": "integer", "description": "Links the track to its media type. Foreign key to media_type.", "expression": null, "alias": null}, {"name": "genre_id", "type": "integer", "description": "Links the track to the genre it belongs to. Foreign key to genre.", "expression": null, "alias": null}, {"name": "composer", "type": "string", "description": "The composer of the track.", "expression": null, "alias": null}, {"name": "milliseconds", "type": "integer", "description": "The length of the track in milliseconds.", "expression": null, "alias": null}, {"name": "bytes", "type": "integer", "description": "The size of the track in bytes.", "expression": null, "alias": null}, {"name": "unit_price", "type": "float", "description": "The price of the track.", "expression": null, "alias": null}]" dimensions="3503x0">
+track_id,name,album_id,media_type_id,genre_id,composer,milliseconds,bytes,unit_price
+1,For Those About To Rock (We Salute You),1,1,1,"Angus Young, Malcolm Young, Brian Johnson",343719,11170334,0.99
+2,Balls to the Wall,2,2,1,"U. Dirkschneider, W. Hoffmann, H. Frank, P. Baltes, S. Kaufmann, G. Hoffmann",342562,5510424,0.99
+3,Fast As a Shark,3,2,1,"F. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman",230619,3990994,0.99
+4,Restless and Wild,3,2,1,"F. Baltes, R.A. Smith-Diesel, S. Kaufman, U. Dirkscneider & W. Hoffman",252051,4331779,0.99
+5,Princess of the Dawn,3,2,1,Deaffy & R.A. Smith-Diesel,375418,6290521,0.99
+</table>
+
+
+<table dialect="postgres" table_name="music_analytics" description="Simplified view for artist–album relationship (one relation to avoid PandasAI DuplicateAlias)." columns="[{"name": "artist.artist_id", "type": "integer", "description": null, "expression": null, "alias": null}, {"name": "artist.name", "type": "string", "description": null, "expression": null, "alias": null}, {"name": "album.album_id", "type": "integer", "description": null, "expression": null, "alias": null}, {"name": "album.title", "type": "string", "description": null, "expression": null, "alias": null}, {"name": "album.artist_id", "type": "integer", "description": null, "expression": null, "alias": null}]" dimensions="347x0">
+artist_artist_id,artist_name,album_album_id,album_title,album_artist_id
+1,AC/DC,1,For Those About To Rock We Salute You,1
+1,AC/DC,4,Let There Be Rock,1
+2,Accept,2,Balls to the Wall,2
+2,Accept,3,Restless and Wild,2
+3,Aerosmith,5,Big Ones,3
+</table>
+
+
+</tables>
+
+The following functions have already been provided. Please use them as needed and do not redefine them.
+<function>
+def execute_sql_query(sql_query: str) -> pd.DataFrame
+    """This method connects to the database, executes the sql query and returns the dataframe"""
+</function>
+
+
+
+Last code generated:
+import pandas as pd
+sql_query = """
+SELECT a.title AS album_title, SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+GROUP BY a.album_id, a.title
+ORDER BY total_revenue DESC
+LIMIT 1;
+"""
+result_df = execute_sql_query(sql_query)
+album_title = result_df.iloc[0]['album_title']
+total_revenue = result_df.iloc[0]['total_revenue']
+result = {'type': 'string', 'value': f"The album with the most revenue is '{album_title}' with a total revenue of ${total_revenue:.2f}."}
+
+
+
+### QUERY
+ tell me the top 10 artists in the rock genre
+
+At the end, declare "result" variable as a dictionary of type and value in the following format:
+
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+
+
+Generate python code and return full updated code:
+
+### Note: Use only relevant table for query and do aggregation, sorting, joins and grouby through sql query
+2026-03-14 18:49:55,240 - INFO - pandasai.helpers.logger - Code Generated:
+import pandas as pd
+
+# SQL query to find the top 10 artists in the rock genre
+sql_query = """
+SELECT a.artist_id, ar.name AS artist_name, SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+JOIN artist ar ON a.artist_id = ar.artist_id
+JOIN genre g ON t.genre_id = g.genre_id
+WHERE g.name = 'Rock'
+GROUP BY a.artist_id, ar.name
+ORDER BY total_revenue DESC
+LIMIT 10;
+"""
+result_df = execute_sql_query(sql_query)
+
+# Formatting the result
+result = {'type': 'dataframe', 'value': result_df}
+2026-03-14 18:49:55,249 - INFO - pandasai.helpers.logger - Validating code requirements...
+2026-03-14 18:49:55,256 - INFO - pandasai.helpers.logger - Code validation successful.
+2026-03-14 18:49:55,262 - INFO - pandasai.helpers.logger - Cleaning the generated code...
+2026-03-14 18:49:55,277 - INFO - pandasai.helpers.logger - Executing code: import pandas as pd
+sql_query = """
+SELECT a.artist_id, ar.name AS artist_name, SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+JOIN artist ar ON a.artist_id = ar.artist_id
+JOIN genre g ON t.genre_id = g.genre_id
+WHERE g.name = 'Rock'
+GROUP BY a.artist_id, ar.name
+ORDER BY total_revenue DESC
+LIMIT 10;
+"""
+result_df = execute_sql_query(sql_query)
+result = {'type': 'dataframe', 'value': result_df}
+2026-03-14 18:49:55,432 - INFO - pandasai.helpers.logger - Response generated successfully.
+2026-03-14 18:50:23,861 - INFO - __main__ - Handling message events: {'token': 'vayIXExK3sDWwDUNvYUtm6bC', 'team_id': 'T0A920TA9B3', 'context_team_id': 'T0A920TA9B3', 'context_enterprise_id': None, 'api_app_id': 'A0AL2NKMT2Q', 'event': {'type': 'message', 'user': 'U0A8P2R8E5Q', 'ts': '1773514222.299859', 'client_msg_id': 'C5126FCE-5704-4AEA-89E9-641F195CCFD2', 'text': 'Top artists per year', 'team': 'T0A920TA9B3', 'blocks': [{'type': 'rich_text', 'block_id': 'trt2t', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'Top artists per year'}]}]}], 'channel': 'D0AL32XBWA0', 'event_ts': '1773514222.299859', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev0ALFAHRRMZ', 'event_time': 1773514222, 'authorizations': [{'enterprise_id': None, 'team_id': 'T0A920TA9B3', 'user_id': 'U0AKW1FMJN9', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMEE5MjBUQTlCMyIsImFpZCI6IkEwQUwyTktNVDJRIiwiY2lkIjoiRDBBTDMyWEJXQTAifQ'}
+2026-03-14 18:50:23,865 - INFO - slackbot_agent.intake.validator - Running validator
+2026-03-14 18:50:23,866 - INFO - slackbot_agent.intake.validator - Validator passed
+2026-03-14 18:50:23,867 - INFO - slackbot_agent.intake.guardrails - Checking for PII
+2026-03-14 18:50:23,868 - INFO - slackbot_agent.intake.guardrails - Checking for blocked patterns
+2026-03-14 18:50:23,870 - INFO - slackbot_agent.engine.reasoner - Calling agent.follow_up with question: top artists per year
+2026-03-14 18:50:23,871 - INFO - pandasai.helpers.logger - Question: top artists per year
+2026-03-14 18:50:23,889 - INFO - pandasai.helpers.logger - Running PandasAI with litellm LLM...
+2026-03-14 18:50:23,898 - INFO - pandasai.helpers.logger - Prompt ID: ef48d462-fa0c-4e4b-b354-6f58f9648b95
+2026-03-14 18:50:23,904 - INFO - pandasai.helpers.logger - Generating new code...
+2026-03-14 18:50:24,953 - INFO - pandasai.helpers.logger - Using Prompt: <tables>
+
+<table dialect="postgres" table_name="album" description="The Album table contains information about music albums. The record for each album is linked to the artist." columns="[{"name": "album_id", "type": "integer", "description": "Unique identifier for each album in the table and this field is not null.", "expression": null, "alias": null}, {"name": "title", "type": "string", "description": "The name of the album and this field is not null.", "expression": null, "alias": null}, {"name": "artist_id", "type": "integer", "description": "Links each album to the artist (unique identifier). Foreign key to artist.", "expression": null, "alias": null}]" dimensions="347x0">
+album_id,title,artist_id
+1,For Those About To Rock We Salute You,1
+2,Balls to the Wall,2
+3,Restless and Wild,2
+4,Let There Be Rock,1
+5,Big Ones,3
+</table>
+
+
+<table dialect="postgres" table_name="artist" description="The artist table contains information about music artists." columns="[{"name": "artist_id", "type": "integer", "description": "Unique identifier for each artist in the table and this field is not null.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the artist.", "expression": null, "alias": null}]" dimensions="275x0">
+artist_id,name
+1,AC/DC
+2,Accept
+3,Aerosmith
+4,Alanis Morissette
+5,Alice In Chains
+</table>
+
+
+<table dialect="postgres" table_name="customer" description="The Customer table holds the information about each customer along with their contact details and a sales representative assigned to each customer." columns="[{"name": "customer_id", "type": "integer", "description": "Unique identifier for each customer in the table and this field is not null.", "expression": null, "alias": null}, {"name": "first_name", "type": "string", "description": "First name of the customer and this field is not null.", "expression": null, "alias": null}, {"name": "last_name", "type": "string", "description": "Last name of the customer.", "expression": null, "alias": null}, {"name": "company", "type": "string", "description": "The company the customer works for.", "expression": null, "alias": null}, {"name": "address", "type": "string", "description": "The address of the customer.", "expression": null, "alias": null}, {"name": "city", "type": "string", "description": "The city the customer resides in.", "expression": null, "alias": null}, {"name": "state", "type": "string", "description": "The state the customer resides in.", "expression": null, "alias": null}, {"name": "country", "type": "string", "description": "The country the customer resides in.", "expression": null, "alias": null}, {"name": "postal_code", "type": "string", "description": "The postal code of the customer's address.", "expression": null, "alias": null}, {"name": "phone", "type": "string", "description": "Phone number of the customer.", "expression": null, "alias": null}, {"name": "fax", "type": "string", "description": "Fax number of the customer.", "expression": null, "alias": null}, {"name": "email", "type": "string", "description": "The email of the customer and this field is not null.", "expression": null, "alias": null}, {"name": "support_rep_id", "type": "integer", "description": "Unique identifier of the sales representative assigned to the customer. Foreign key to employee.", "expression": null, "alias": null}]" dimensions="59x0">
+customer_id,first_name,last_name,company,address,city,state,country,postal_code,phone,fax,email,support_rep_id
+1,Luís,Gonçalves,Embraer - Empresa Brasileira de Aeronáutica S.A.,"Av. Brigadeiro Faria Lima, 2170",São José dos Campos,SP,Brazil,12227-000,+55 (12) 3923-5555,+55 (12) 3923-5566,luisg@embraer.com.br,3
+2,Leonie,Köhler,,Theodor-Heuss-Straße 34,Stuttgart,,Germany,70174,+49 0711 2842222,,leonekohler@surfeu.de,5
+3,François,Tremblay,,1498 rue Bélanger,Montréal,QC,Canada,H2G 1A7,+1 (514) 721-4711,,ftremblay@gmail.com,3
+4,Bjørn,Hansen,,Ullevålsveien 14,Oslo,,Norway,0171,+47 22 44 22 22,,bjorn.hansen@yahoo.no,4
+5,František,Wichterlová,JetBrains s.r.o.,Klanova 9/506,Prague,,Czech Republic,14700,+420 2 4172 5555,+420 2 4172 5555,frantisekw@jetbrains.com,4
+</table>
+
+
+<table dialect="postgres" table_name="employee" description="The Employee table holds the employee details." columns="[{"name": "employee_id", "type": "integer", "description": "Unique identifier for each employee in the table and this field is not null.", "expression": null, "alias": null}, {"name": "first_name", "type": "string", "description": "First name of the employee and this field is not null.", "expression": null, "alias": null}, {"name": "last_name", "type": "string", "description": "Last name of the employee and this field is not null.", "expression": null, "alias": null}, {"name": "title", "type": "string", "description": "The title the employee holds.", "expression": null, "alias": null}, {"name": "reports_to", "type": "integer", "description": "The employee_id of the superior/manager the employee reports to.", "expression": null, "alias": null}, {"name": "birth_date", "type": "datetime", "description": "The birth date of the employee.", "expression": null, "alias": null}, {"name": "hire_date", "type": "datetime", "description": "The hire date of the employee.", "expression": null, "alias": null}, {"name": "address", "type": "string", "description": "The address of the employee.", "expression": null, "alias": null}, {"name": "city", "type": "string", "description": "The city the employee resides in.", "expression": null, "alias": null}, {"name": "state", "type": "string", "description": "The state the employee resides in.", "expression": null, "alias": null}, {"name": "country", "type": "string", "description": "The country the employee resides in.", "expression": null, "alias": null}, {"name": "postal_code", "type": "string", "description": "The postal code of the employee's address.", "expression": null, "alias": null}, {"name": "phone", "type": "string", "description": "Phone number of the employee.", "expression": null, "alias": null}, {"name": "fax", "type": "string", "description": "Fax number of the employee.", "expression": null, "alias": null}, {"name": "email", "type": "string", "description": "The email of the employee.", "expression": null, "alias": null}]" dimensions="8x0">
+employee_id,first_name,last_name,title,reports_to,birth_date,hire_date,address,city,state,country,postal_code,phone,fax,email
+1,Andrew,Adams,General Manager,,1962-02-18,2002-08-14,11120 Jasper Ave NW,Edmonton,AB,Canada,T5K 2N1,+1 (780) 428-9482,+1 (780) 428-3457,andrew@chinookcorp.com
+2,Nancy,Edwards,Sales Manager,1.0,1958-12-08,2002-05-01,825 8 Ave SW,Calgary,AB,Canada,T2P 2T3,+1 (403) 262-3443,+1 (403) 262-3322,nancy@chinookcorp.com
+3,Jane,Peacock,Sales Support Agent,2.0,1973-08-29,2002-04-01,1111 6 Ave SW,Calgary,AB,Canada,T2P 5M5,+1 (403) 262-3443,+1 (403) 262-6712,jane@chinookcorp.com
+4,Margaret,Park,Sales Support Agent,2.0,1947-09-19,2003-05-03,683 10 Street SW,Calgary,AB,Canada,T2P 5G3,+1 (403) 263-4423,+1 (403) 263-4289,margaret@chinookcorp.com
+5,Steve,Johnson,Sales Support Agent,2.0,1965-03-03,2003-10-17,7727B 41 Ave,Calgary,AB,Canada,T3B 1Y7,1 (780) 836-9987,1 (780) 836-9543,steve@chinookcorp.com
+</table>
+
+
+<table dialect="postgres" table_name="genre" description="The Genre table contains information about all genres." columns="[{"name": "genre_id", "type": "integer", "description": "Unique identifier for the genre.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the genre.", "expression": null, "alias": null}]" dimensions="25x0">
+genre_id,name
+1,Rock
+2,Jazz
+3,Metal
+4,Alternative & Punk
+5,Rock And Roll
+</table>
+
+
+<table dialect="postgres" table_name="invoice" description="The invoice table contains billing information for customer purchases. It aggregates sales data per transaction." columns="[{"name": "invoice_id", "type": "integer", "description": "Unique identifier for the invoice.", "expression": null, "alias": null}, {"name": "customer_id", "type": "integer", "description": "Links the invoice to the customer it belongs to. Foreign key to customer.", "expression": null, "alias": null}, {"name": "invoice_date", "type": "datetime", "description": "The invoice date of the transaction.", "expression": null, "alias": null}, {"name": "billing_address", "type": "string", "description": "The billing address of the customer.", "expression": null, "alias": null}, {"name": "billing_city", "type": "string", "description": "The billing city of the customer.", "expression": null, "alias": null}, {"name": "billing_state", "type": "string", "description": "The billing state of the customer.", "expression": null, "alias": null}, {"name": "billing_country", "type": "string", "description": "The billing country of the customer.", "expression": null, "alias": null}, {"name": "billing_postal_code", "type": "string", "description": "The billing postal code of the customer's address.", "expression": null, "alias": null}, {"name": "total", "type": "integer", "description": "The total price of the customer transaction.", "expression": null, "alias": null}]" dimensions="412x0">
+invoice_id,customer_id,invoice_date,billing_address,billing_city,billing_state,billing_country,billing_postal_code,total
+1,2,2021-01-01,Theodor-Heuss-Straße 34,Stuttgart,,Germany,70174,1.98
+2,4,2021-01-02,Ullevålsveien 14,Oslo,,Norway,0171,3.96
+3,8,2021-01-03,Grétrystraat 63,Brussels,,Belgium,1000,5.94
+4,14,2021-01-06,8210 111 ST NW,Edmonton,AB,Canada,T6G 2C7,8.91
+5,23,2021-01-11,69 Salem Street,Boston,MA,USA,2113,13.86
+</table>
+
+
+<table dialect="postgres" table_name="invoice_line" description="The invoice line table contains line items for each invoice, stating the tracks purchased and quantities." columns="[{"name": "invoice_line_id", "type": "integer", "description": "Unique identifier for the invoice line items.", "expression": null, "alias": null}, {"name": "invoice_id", "type": "integer", "description": "Links the invoice line items to the invoice it belongs to. Foreign key to invoice.", "expression": null, "alias": null}, {"name": "track_id", "type": "integer", "description": "Links the invoice line item to the track. Foreign key to track.", "expression": null, "alias": null}, {"name": "unit_price", "type": "float", "description": "The price of the line item.", "expression": null, "alias": null}, {"name": "quantity", "type": "integer", "description": "The quantity of the line item.", "expression": null, "alias": null}]" dimensions="2240x0">
+invoice_line_id,invoice_id,track_id,unit_price,quantity
+1.0,1.0,2.0,0.99,1.0
+2.0,1.0,4.0,0.99,1.0
+3.0,2.0,6.0,0.99,1.0
+4.0,2.0,8.0,0.99,1.0
+5.0,2.0,10.0,0.99,1.0
+</table>
+
+
+<table dialect="postgres" table_name="media_type" description="The Media type table contains information about the media type of audio and video files." columns="[{"name": "media_type_id", "type": "integer", "description": "Unique identifier for the media type.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the media type.", "expression": null, "alias": null}]" dimensions="5x0">
+media_type_id,name
+1,MPEG audio file
+2,Protected AAC audio file
+3,Protected MPEG-4 video file
+4,Purchased AAC audio file
+5,AAC audio file
+</table>
+
+
+<table dialect="postgres" table_name="playlist" description="The Playlist table contains information about playlists." columns="[{"name": "playlist_id", "type": "integer", "description": "Unique identifier for the playlist.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the playlist.", "expression": null, "alias": null}]" dimensions="18x0">
+playlist_id,name
+1,Music
+2,Movies
+3,TV Shows
+4,Audiobooks
+5,90’s Music
+</table>
+
+
+<table dialect="postgres" table_name="playlist_track" description="This table links playlists and tracks together by their ids." columns="[{"name": "playlist_id", "type": "integer", "description": "Unique identifier for the playlist; links to playlist. Foreign key to playlist.", "expression": null, "alias": null}, {"name": "track_id", "type": "integer", "description": "Unique identifier for the track; links to track. Foreign key to track.", "expression": null, "alias": null}]" dimensions="8715x0">
+playlist_id,track_id
+1,3402
+1,3389
+1,3390
+1,3391
+1,3392
+</table>
+
+
+<table dialect="postgres" table_name="track" description="The track table contains detailed information for each song or media file, including metadata like price, duration and size." columns="[{"name": "track_id", "type": "integer", "description": "Unique identifier for the track.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the track.", "expression": null, "alias": null}, {"name": "album_id", "type": "integer", "description": "Links the track to the album it belongs to. Foreign key to album.", "expression": null, "alias": null}, {"name": "media_type_id", "type": "integer", "description": "Links the track to its media type. Foreign key to media_type.", "expression": null, "alias": null}, {"name": "genre_id", "type": "integer", "description": "Links the track to the genre it belongs to. Foreign key to genre.", "expression": null, "alias": null}, {"name": "composer", "type": "string", "description": "The composer of the track.", "expression": null, "alias": null}, {"name": "milliseconds", "type": "integer", "description": "The length of the track in milliseconds.", "expression": null, "alias": null}, {"name": "bytes", "type": "integer", "description": "The size of the track in bytes.", "expression": null, "alias": null}, {"name": "unit_price", "type": "float", "description": "The price of the track.", "expression": null, "alias": null}]" dimensions="3503x0">
+track_id,name,album_id,media_type_id,genre_id,composer,milliseconds,bytes,unit_price
+1,For Those About To Rock (We Salute You),1,1,1,"Angus Young, Malcolm Young, Brian Johnson",343719,11170334,0.99
+2,Balls to the Wall,2,2,1,"U. Dirkschneider, W. Hoffmann, H. Frank, P. Baltes, S. Kaufmann, G. Hoffmann",342562,5510424,0.99
+3,Fast As a Shark,3,2,1,"F. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman",230619,3990994,0.99
+4,Restless and Wild,3,2,1,"F. Baltes, R.A. Smith-Diesel, S. Kaufman, U. Dirkscneider & W. Hoffman",252051,4331779,0.99
+5,Princess of the Dawn,3,2,1,Deaffy & R.A. Smith-Diesel,375418,6290521,0.99
+</table>
+
+
+<table dialect="postgres" table_name="music_analytics" description="Simplified view for artist–album relationship (one relation to avoid PandasAI DuplicateAlias)." columns="[{"name": "artist.artist_id", "type": "integer", "description": null, "expression": null, "alias": null}, {"name": "artist.name", "type": "string", "description": null, "expression": null, "alias": null}, {"name": "album.album_id", "type": "integer", "description": null, "expression": null, "alias": null}, {"name": "album.title", "type": "string", "description": null, "expression": null, "alias": null}, {"name": "album.artist_id", "type": "integer", "description": null, "expression": null, "alias": null}]" dimensions="347x0">
+artist_artist_id,artist_name,album_album_id,album_title,album_artist_id
+1,AC/DC,1,For Those About To Rock We Salute You,1
+1,AC/DC,4,Let There Be Rock,1
+2,Accept,2,Balls to the Wall,2
+2,Accept,3,Restless and Wild,2
+3,Aerosmith,5,Big Ones,3
+</table>
+
+
+</tables>
+
+The following functions have already been provided. Please use them as needed and do not redefine them.
+<function>
+def execute_sql_query(sql_query: str) -> pd.DataFrame
+    """This method connects to the database, executes the sql query and returns the dataframe"""
+</function>
+
+
+
+Last code generated:
+import pandas as pd
+sql_query = """
+SELECT a.artist_id, ar.name AS artist_name, SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+JOIN artist ar ON a.artist_id = ar.artist_id
+JOIN genre g ON t.genre_id = g.genre_id
+WHERE g.name = 'Rock'
+GROUP BY a.artist_id, ar.name
+ORDER BY total_revenue DESC
+LIMIT 10;
+"""
+result_df = execute_sql_query(sql_query)
+result = {'type': 'dataframe', 'value': result_df}
+
+
+
+### QUERY
+ top artists per year
+
+At the end, declare "result" variable as a dictionary of type and value in the following format:
+
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+
+
+Generate python code and return full updated code:
+
+### Note: Use only relevant table for query and do aggregation, sorting, joins and grouby through sql query
+2026-03-14 18:50:30,453 - INFO - pandasai.helpers.logger - Code Generated:
+import pandas as pd
+
+sql_query = """
+SELECT EXTRACT(YEAR FROM i.invoice_date) AS year, 
+       a.artist_id, 
+       ar.name AS artist_name, 
+       SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+JOIN artist ar ON a.artist_id = ar.artist_id
+GROUP BY year, a.artist_id, ar.name
+ORDER BY year, total_revenue DESC;
+"""
+
+result_df = execute_sql_query(sql_query)
+result = {'type': 'dataframe', 'value': result_df}
+2026-03-14 18:50:30,471 - INFO - pandasai.helpers.logger - Validating code requirements...
+2026-03-14 18:50:30,479 - INFO - pandasai.helpers.logger - Code validation successful.
+2026-03-14 18:50:30,486 - INFO - pandasai.helpers.logger - Cleaning the generated code...
+2026-03-14 18:50:30,510 - INFO - pandasai.helpers.logger - Executing code: import pandas as pd
+sql_query = """
+SELECT EXTRACT(YEAR FROM i.invoice_date) AS year, 
+       a.artist_id, 
+       ar.name AS artist_name, 
+       SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+JOIN artist ar ON a.artist_id = ar.artist_id
+GROUP BY year, a.artist_id, ar.name
+ORDER BY year, total_revenue DESC;
+"""
+result_df = execute_sql_query(sql_query)
+result = {'type': 'dataframe', 'value': result_df}
+2026-03-14 18:50:30,714 - INFO - pandasai.helpers.logger - Response generated successfully.
+2026-03-14 18:51:37,865 - INFO - __main__ - Handling message events: {'token': 'vayIXExK3sDWwDUNvYUtm6bC', 'team_id': 'T0A920TA9B3', 'context_team_id': 'T0A920TA9B3', 'context_enterprise_id': None, 'api_app_id': 'A0AL2NKMT2Q', 'event': {'type': 'message', 'user': 'U0A8P2R8E5Q', 'ts': '1773514297.236129', 'client_msg_id': '78DC3BB3-7EC5-4C74-890A-03A40FF0C3D4', 'text': 'Show me a chart with the total revenue for the rock genre per year for the past 5 years', 'team': 'T0A920TA9B3', 'blocks': [{'type': 'rich_text', 'block_id': '82tgl', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'Show me a chart with the total revenue for the rock genre per year for the past 5 years'}]}]}], 'channel': 'D0AL32XBWA0', 'event_ts': '1773514297.236129', 'channel_type': 'im'}, 'type': 'event_callback', 'event_id': 'Ev0AL68SN78X', 'event_time': 1773514297, 'authorizations': [{'enterprise_id': None, 'team_id': 'T0A920TA9B3', 'user_id': 'U0AKW1FMJN9', 'is_bot': True, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMEE5MjBUQTlCMyIsImFpZCI6IkEwQUwyTktNVDJRIiwiY2lkIjoiRDBBTDMyWEJXQTAifQ'}
+2026-03-14 18:51:37,866 - INFO - slackbot_agent.intake.validator - Running validator
+2026-03-14 18:51:37,866 - INFO - slackbot_agent.intake.validator - Validator passed
+2026-03-14 18:51:37,867 - INFO - slackbot_agent.intake.guardrails - Checking for PII
+2026-03-14 18:51:37,867 - INFO - slackbot_agent.intake.guardrails - Checking for blocked patterns
+2026-03-14 18:51:37,867 - INFO - slackbot_agent.engine.reasoner - Calling agent.follow_up with question: show me a chart with the total revenue for the rock genre per year for the past 5 years
+2026-03-14 18:51:37,868 - INFO - pandasai.helpers.logger - Question: show me a chart with the total revenue for the rock genre per year for the past 5 years
+2026-03-14 18:51:37,873 - INFO - pandasai.helpers.logger - Running PandasAI with litellm LLM...
+2026-03-14 18:51:37,878 - INFO - pandasai.helpers.logger - Prompt ID: 9eeac9ed-411a-4e1e-ae62-2f723d6bca39
+2026-03-14 18:51:37,883 - INFO - pandasai.helpers.logger - Generating new code...
+2026-03-14 18:51:38,665 - INFO - pandasai.helpers.logger - Using Prompt: <tables>
+
+<table dialect="postgres" table_name="album" description="The Album table contains information about music albums. The record for each album is linked to the artist." columns="[{"name": "album_id", "type": "integer", "description": "Unique identifier for each album in the table and this field is not null.", "expression": null, "alias": null}, {"name": "title", "type": "string", "description": "The name of the album and this field is not null.", "expression": null, "alias": null}, {"name": "artist_id", "type": "integer", "description": "Links each album to the artist (unique identifier). Foreign key to artist.", "expression": null, "alias": null}]" dimensions="347x0">
+album_id,title,artist_id
+1,For Those About To Rock We Salute You,1
+2,Balls to the Wall,2
+3,Restless and Wild,2
+4,Let There Be Rock,1
+5,Big Ones,3
+</table>
+
+
+<table dialect="postgres" table_name="artist" description="The artist table contains information about music artists." columns="[{"name": "artist_id", "type": "integer", "description": "Unique identifier for each artist in the table and this field is not null.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the artist.", "expression": null, "alias": null}]" dimensions="275x0">
+artist_id,name
+1,AC/DC
+2,Accept
+3,Aerosmith
+4,Alanis Morissette
+5,Alice In Chains
+</table>
+
+
+<table dialect="postgres" table_name="customer" description="The Customer table holds the information about each customer along with their contact details and a sales representative assigned to each customer." columns="[{"name": "customer_id", "type": "integer", "description": "Unique identifier for each customer in the table and this field is not null.", "expression": null, "alias": null}, {"name": "first_name", "type": "string", "description": "First name of the customer and this field is not null.", "expression": null, "alias": null}, {"name": "last_name", "type": "string", "description": "Last name of the customer.", "expression": null, "alias": null}, {"name": "company", "type": "string", "description": "The company the customer works for.", "expression": null, "alias": null}, {"name": "address", "type": "string", "description": "The address of the customer.", "expression": null, "alias": null}, {"name": "city", "type": "string", "description": "The city the customer resides in.", "expression": null, "alias": null}, {"name": "state", "type": "string", "description": "The state the customer resides in.", "expression": null, "alias": null}, {"name": "country", "type": "string", "description": "The country the customer resides in.", "expression": null, "alias": null}, {"name": "postal_code", "type": "string", "description": "The postal code of the customer's address.", "expression": null, "alias": null}, {"name": "phone", "type": "string", "description": "Phone number of the customer.", "expression": null, "alias": null}, {"name": "fax", "type": "string", "description": "Fax number of the customer.", "expression": null, "alias": null}, {"name": "email", "type": "string", "description": "The email of the customer and this field is not null.", "expression": null, "alias": null}, {"name": "support_rep_id", "type": "integer", "description": "Unique identifier of the sales representative assigned to the customer. Foreign key to employee.", "expression": null, "alias": null}]" dimensions="59x0">
+customer_id,first_name,last_name,company,address,city,state,country,postal_code,phone,fax,email,support_rep_id
+1,Luís,Gonçalves,Embraer - Empresa Brasileira de Aeronáutica S.A.,"Av. Brigadeiro Faria Lima, 2170",São José dos Campos,SP,Brazil,12227-000,+55 (12) 3923-5555,+55 (12) 3923-5566,luisg@embraer.com.br,3
+2,Leonie,Köhler,,Theodor-Heuss-Straße 34,Stuttgart,,Germany,70174,+49 0711 2842222,,leonekohler@surfeu.de,5
+3,François,Tremblay,,1498 rue Bélanger,Montréal,QC,Canada,H2G 1A7,+1 (514) 721-4711,,ftremblay@gmail.com,3
+4,Bjørn,Hansen,,Ullevålsveien 14,Oslo,,Norway,0171,+47 22 44 22 22,,bjorn.hansen@yahoo.no,4
+5,František,Wichterlová,JetBrains s.r.o.,Klanova 9/506,Prague,,Czech Republic,14700,+420 2 4172 5555,+420 2 4172 5555,frantisekw@jetbrains.com,4
+</table>
+
+
+<table dialect="postgres" table_name="employee" description="The Employee table holds the employee details." columns="[{"name": "employee_id", "type": "integer", "description": "Unique identifier for each employee in the table and this field is not null.", "expression": null, "alias": null}, {"name": "first_name", "type": "string", "description": "First name of the employee and this field is not null.", "expression": null, "alias": null}, {"name": "last_name", "type": "string", "description": "Last name of the employee and this field is not null.", "expression": null, "alias": null}, {"name": "title", "type": "string", "description": "The title the employee holds.", "expression": null, "alias": null}, {"name": "reports_to", "type": "integer", "description": "The employee_id of the superior/manager the employee reports to.", "expression": null, "alias": null}, {"name": "birth_date", "type": "datetime", "description": "The birth date of the employee.", "expression": null, "alias": null}, {"name": "hire_date", "type": "datetime", "description": "The hire date of the employee.", "expression": null, "alias": null}, {"name": "address", "type": "string", "description": "The address of the employee.", "expression": null, "alias": null}, {"name": "city", "type": "string", "description": "The city the employee resides in.", "expression": null, "alias": null}, {"name": "state", "type": "string", "description": "The state the employee resides in.", "expression": null, "alias": null}, {"name": "country", "type": "string", "description": "The country the employee resides in.", "expression": null, "alias": null}, {"name": "postal_code", "type": "string", "description": "The postal code of the employee's address.", "expression": null, "alias": null}, {"name": "phone", "type": "string", "description": "Phone number of the employee.", "expression": null, "alias": null}, {"name": "fax", "type": "string", "description": "Fax number of the employee.", "expression": null, "alias": null}, {"name": "email", "type": "string", "description": "The email of the employee.", "expression": null, "alias": null}]" dimensions="8x0">
+employee_id,first_name,last_name,title,reports_to,birth_date,hire_date,address,city,state,country,postal_code,phone,fax,email
+1,Andrew,Adams,General Manager,,1962-02-18,2002-08-14,11120 Jasper Ave NW,Edmonton,AB,Canada,T5K 2N1,+1 (780) 428-9482,+1 (780) 428-3457,andrew@chinookcorp.com
+2,Nancy,Edwards,Sales Manager,1.0,1958-12-08,2002-05-01,825 8 Ave SW,Calgary,AB,Canada,T2P 2T3,+1 (403) 262-3443,+1 (403) 262-3322,nancy@chinookcorp.com
+3,Jane,Peacock,Sales Support Agent,2.0,1973-08-29,2002-04-01,1111 6 Ave SW,Calgary,AB,Canada,T2P 5M5,+1 (403) 262-3443,+1 (403) 262-6712,jane@chinookcorp.com
+4,Margaret,Park,Sales Support Agent,2.0,1947-09-19,2003-05-03,683 10 Street SW,Calgary,AB,Canada,T2P 5G3,+1 (403) 263-4423,+1 (403) 263-4289,margaret@chinookcorp.com
+5,Steve,Johnson,Sales Support Agent,2.0,1965-03-03,2003-10-17,7727B 41 Ave,Calgary,AB,Canada,T3B 1Y7,1 (780) 836-9987,1 (780) 836-9543,steve@chinookcorp.com
+</table>
+
+
+<table dialect="postgres" table_name="genre" description="The Genre table contains information about all genres." columns="[{"name": "genre_id", "type": "integer", "description": "Unique identifier for the genre.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the genre.", "expression": null, "alias": null}]" dimensions="25x0">
+genre_id,name
+1,Rock
+2,Jazz
+3,Metal
+4,Alternative & Punk
+5,Rock And Roll
+</table>
+
+
+<table dialect="postgres" table_name="invoice" description="The invoice table contains billing information for customer purchases. It aggregates sales data per transaction." columns="[{"name": "invoice_id", "type": "integer", "description": "Unique identifier for the invoice.", "expression": null, "alias": null}, {"name": "customer_id", "type": "integer", "description": "Links the invoice to the customer it belongs to. Foreign key to customer.", "expression": null, "alias": null}, {"name": "invoice_date", "type": "datetime", "description": "The invoice date of the transaction.", "expression": null, "alias": null}, {"name": "billing_address", "type": "string", "description": "The billing address of the customer.", "expression": null, "alias": null}, {"name": "billing_city", "type": "string", "description": "The billing city of the customer.", "expression": null, "alias": null}, {"name": "billing_state", "type": "string", "description": "The billing state of the customer.", "expression": null, "alias": null}, {"name": "billing_country", "type": "string", "description": "The billing country of the customer.", "expression": null, "alias": null}, {"name": "billing_postal_code", "type": "string", "description": "The billing postal code of the customer's address.", "expression": null, "alias": null}, {"name": "total", "type": "integer", "description": "The total price of the customer transaction.", "expression": null, "alias": null}]" dimensions="412x0">
+invoice_id,customer_id,invoice_date,billing_address,billing_city,billing_state,billing_country,billing_postal_code,total
+1,2,2021-01-01,Theodor-Heuss-Straße 34,Stuttgart,,Germany,70174,1.98
+2,4,2021-01-02,Ullevålsveien 14,Oslo,,Norway,0171,3.96
+3,8,2021-01-03,Grétrystraat 63,Brussels,,Belgium,1000,5.94
+4,14,2021-01-06,8210 111 ST NW,Edmonton,AB,Canada,T6G 2C7,8.91
+5,23,2021-01-11,69 Salem Street,Boston,MA,USA,2113,13.86
+</table>
+
+
+<table dialect="postgres" table_name="invoice_line" description="The invoice line table contains line items for each invoice, stating the tracks purchased and quantities." columns="[{"name": "invoice_line_id", "type": "integer", "description": "Unique identifier for the invoice line items.", "expression": null, "alias": null}, {"name": "invoice_id", "type": "integer", "description": "Links the invoice line items to the invoice it belongs to. Foreign key to invoice.", "expression": null, "alias": null}, {"name": "track_id", "type": "integer", "description": "Links the invoice line item to the track. Foreign key to track.", "expression": null, "alias": null}, {"name": "unit_price", "type": "float", "description": "The price of the line item.", "expression": null, "alias": null}, {"name": "quantity", "type": "integer", "description": "The quantity of the line item.", "expression": null, "alias": null}]" dimensions="2240x0">
+invoice_line_id,invoice_id,track_id,unit_price,quantity
+1.0,1.0,2.0,0.99,1.0
+2.0,1.0,4.0,0.99,1.0
+3.0,2.0,6.0,0.99,1.0
+4.0,2.0,8.0,0.99,1.0
+5.0,2.0,10.0,0.99,1.0
+</table>
+
+
+<table dialect="postgres" table_name="media_type" description="The Media type table contains information about the media type of audio and video files." columns="[{"name": "media_type_id", "type": "integer", "description": "Unique identifier for the media type.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the media type.", "expression": null, "alias": null}]" dimensions="5x0">
+media_type_id,name
+1,MPEG audio file
+2,Protected AAC audio file
+3,Protected MPEG-4 video file
+4,Purchased AAC audio file
+5,AAC audio file
+</table>
+
+
+<table dialect="postgres" table_name="playlist" description="The Playlist table contains information about playlists." columns="[{"name": "playlist_id", "type": "integer", "description": "Unique identifier for the playlist.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the playlist.", "expression": null, "alias": null}]" dimensions="18x0">
+playlist_id,name
+1,Music
+2,Movies
+3,TV Shows
+4,Audiobooks
+5,90’s Music
+</table>
+
+
+<table dialect="postgres" table_name="playlist_track" description="This table links playlists and tracks together by their ids." columns="[{"name": "playlist_id", "type": "integer", "description": "Unique identifier for the playlist; links to playlist. Foreign key to playlist.", "expression": null, "alias": null}, {"name": "track_id", "type": "integer", "description": "Unique identifier for the track; links to track. Foreign key to track.", "expression": null, "alias": null}]" dimensions="8715x0">
+playlist_id,track_id
+1,3402
+1,3389
+1,3390
+1,3391
+1,3392
+</table>
+
+
+<table dialect="postgres" table_name="track" description="The track table contains detailed information for each song or media file, including metadata like price, duration and size." columns="[{"name": "track_id", "type": "integer", "description": "Unique identifier for the track.", "expression": null, "alias": null}, {"name": "name", "type": "string", "description": "The name of the track.", "expression": null, "alias": null}, {"name": "album_id", "type": "integer", "description": "Links the track to the album it belongs to. Foreign key to album.", "expression": null, "alias": null}, {"name": "media_type_id", "type": "integer", "description": "Links the track to its media type. Foreign key to media_type.", "expression": null, "alias": null}, {"name": "genre_id", "type": "integer", "description": "Links the track to the genre it belongs to. Foreign key to genre.", "expression": null, "alias": null}, {"name": "composer", "type": "string", "description": "The composer of the track.", "expression": null, "alias": null}, {"name": "milliseconds", "type": "integer", "description": "The length of the track in milliseconds.", "expression": null, "alias": null}, {"name": "bytes", "type": "integer", "description": "The size of the track in bytes.", "expression": null, "alias": null}, {"name": "unit_price", "type": "float", "description": "The price of the track.", "expression": null, "alias": null}]" dimensions="3503x0">
+track_id,name,album_id,media_type_id,genre_id,composer,milliseconds,bytes,unit_price
+1,For Those About To Rock (We Salute You),1,1,1,"Angus Young, Malcolm Young, Brian Johnson",343719,11170334,0.99
+2,Balls to the Wall,2,2,1,"U. Dirkschneider, W. Hoffmann, H. Frank, P. Baltes, S. Kaufmann, G. Hoffmann",342562,5510424,0.99
+3,Fast As a Shark,3,2,1,"F. Baltes, S. Kaufman, U. Dirkscneider & W. Hoffman",230619,3990994,0.99
+4,Restless and Wild,3,2,1,"F. Baltes, R.A. Smith-Diesel, S. Kaufman, U. Dirkscneider & W. Hoffman",252051,4331779,0.99
+5,Princess of the Dawn,3,2,1,Deaffy & R.A. Smith-Diesel,375418,6290521,0.99
+</table>
+
+
+<table dialect="postgres" table_name="music_analytics" description="Simplified view for artist–album relationship (one relation to avoid PandasAI DuplicateAlias)." columns="[{"name": "artist.artist_id", "type": "integer", "description": null, "expression": null, "alias": null}, {"name": "artist.name", "type": "string", "description": null, "expression": null, "alias": null}, {"name": "album.album_id", "type": "integer", "description": null, "expression": null, "alias": null}, {"name": "album.title", "type": "string", "description": null, "expression": null, "alias": null}, {"name": "album.artist_id", "type": "integer", "description": null, "expression": null, "alias": null}]" dimensions="347x0">
+artist_artist_id,artist_name,album_album_id,album_title,album_artist_id
+1,AC/DC,1,For Those About To Rock We Salute You,1
+1,AC/DC,4,Let There Be Rock,1
+2,Accept,2,Balls to the Wall,2
+2,Accept,3,Restless and Wild,2
+3,Aerosmith,5,Big Ones,3
+</table>
+
+
+</tables>
+
+The following functions have already been provided. Please use them as needed and do not redefine them.
+<function>
+def execute_sql_query(sql_query: str) -> pd.DataFrame
+    """This method connects to the database, executes the sql query and returns the dataframe"""
+</function>
+
+
+
+Last code generated:
+import pandas as pd
+sql_query = """
+SELECT EXTRACT(YEAR FROM i.invoice_date) AS year, 
+       a.artist_id, 
+       ar.name AS artist_name, 
+       SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+JOIN artist ar ON a.artist_id = ar.artist_id
+GROUP BY year, a.artist_id, ar.name
+ORDER BY year, total_revenue DESC;
+"""
+result_df = execute_sql_query(sql_query)
+result = {'type': 'dataframe', 'value': result_df}
+
+
+
+### QUERY
+ show me a chart with the total revenue for the rock genre per year for the past 5 years
+
+At the end, declare "result" variable as a dictionary of type and value in the following format:
+
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+
+
+Generate python code and return full updated code:
+
+### Note: Use only relevant table for query and do aggregation, sorting, joins and grouby through sql query
+2026-03-14 18:51:44,273 - INFO - pandasai.helpers.logger - Code Generated:
+import pandas as pd
+import matplotlib.pyplot as plt
+
+sql_query = """
+SELECT EXTRACT(YEAR FROM i.invoice_date) AS year, 
+       SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+JOIN genre g ON t.genre_id = g.genre_id
+WHERE g.name = 'Rock'
+AND EXTRACT(YEAR FROM i.invoice_date) >= EXTRACT(YEAR FROM CURRENT_DATE) - 5
+GROUP BY year
+ORDER BY year;
+"""
+
+result_df = execute_sql_query(sql_query)
+
+# Plotting the total revenue for the rock genre per year
+plt.figure(figsize=(10, 6))
+plt.bar(result_df['year'], result_df['total_revenue'], color='blue')
+plt.xlabel('Year')
+plt.ylabel('Total Revenue')
+plt.title('Total Revenue for Rock Genre per Year for the Past 5 Years')
+plt.xticks(result_df['year'])
+plt.grid(axis='y')
+
+# Save the plot as a file
+chart_filename = 'rock_genre_revenue_chart.png'
+plt.savefig(chart_filename)
+plt.close()
+
+result = {'type': 'plot', 'value': chart_filename}
+2026-03-14 18:51:44,294 - INFO - pandasai.helpers.logger - Validating code requirements...
+2026-03-14 18:51:44,303 - INFO - pandasai.helpers.logger - Code validation successful.
+2026-03-14 18:51:44,313 - INFO - pandasai.helpers.logger - Cleaning the generated code...
+2026-03-14 18:51:44,330 - INFO - pandasai.helpers.logger - Executing code: import pandas as pd
+import matplotlib.pyplot as plt
+sql_query = """
+SELECT EXTRACT(YEAR FROM i.invoice_date) AS year, 
+       SUM(il.unit_price * il.quantity) AS total_revenue
+FROM invoice_line il
+JOIN invoice i ON il.invoice_id = i.invoice_id
+JOIN track t ON il.track_id = t.track_id
+JOIN album a ON t.album_id = a.album_id
+JOIN genre g ON t.genre_id = g.genre_id
+WHERE g.name = 'Rock'
+AND EXTRACT(YEAR FROM i.invoice_date) >= EXTRACT(YEAR FROM CURRENT_DATE) - 5
+GROUP BY year
+ORDER BY year;
+"""
+result_df = execute_sql_query(sql_query)
+plt.figure(figsize=(10, 6))
+plt.bar(result_df['year'], result_df['total_revenue'], color='blue')
+plt.xlabel('Year')
+plt.ylabel('Total Revenue')
+plt.title('Total Revenue for Rock Genre per Year for the Past 5 Years')
+plt.xticks(result_df['year'])
+plt.grid(axis='y')
+chart_filename = 'exports\\charts\\temp_chart_0d038a6e-582b-4737-a1d5-a5eae0618498.png'
+plt.savefig(chart_filename)
+plt.close()
+result = {'type': 'plot', 'value': chart_filename}
+2026-03-14 18:51:45,560 - INFO - pandasai.helpers.logger - Response generated successfully.
+2026-03-14 19:48:49,499 - INFO - slack_bolt.App - The connection seems to be stale. Disconnecting... (session id: 6d592544-c2af-409f-acbe-97de3e043ce4, reason: disconnected for 2729+ seconds)
+2026-03-14 19:48:49,576 - INFO - slack_bolt.App - The connection has been closed (session id: 6d592544-c2af-409f-acbe-97de3e043ce4)
+2026-03-14 19:48:49,600 - INFO - slack_bolt.App - The session seems to be already closed. Reconnecting... (session id: 6d592544-c2af-409f-acbe-97de3e043ce4)
+2026-03-14 19:48:49,620 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 19:48:51,993 - INFO - slack_bolt.App - The connection has been closed (session id: 6d592544-c2af-409f-acbe-97de3e043ce4)
+2026-03-14 19:48:52,024 - INFO - slack_bolt.App - A new session has been established (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78)
+2026-03-14 19:48:52,087 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 19:48:52,119 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 6d592544-c2af-409f-acbe-97de3e043ce4)
+2026-03-14 19:48:53,018 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78)
+2026-03-14 19:49:02,157 - ERROR - slack_bolt.App - Failed to check the state of sock (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2426))
+2026-03-14 19:49:12,181 - ERROR - slack_bolt.App - Failed to check the state of sock (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2426))
+2026-03-14 19:49:22,184 - ERROR - slack_bolt.App - Failed to check the state of sock (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2426))
+2026-03-14 19:49:32,191 - ERROR - slack_bolt.App - Failed to check the state of sock (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2426))
+2026-03-14 19:49:42,205 - ERROR - slack_bolt.App - Failed to check the state of sock (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2426))
+2026-03-14 19:49:42,206 - INFO - slack_bolt.App - The connection has been closed (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78)
+2026-03-14 19:49:42,208 - INFO - slack_bolt.App - The session seems to be already closed. Reconnecting... (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78)
+2026-03-14 19:49:42,208 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 19:49:43,611 - INFO - slack_bolt.App - The connection has been closed (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78)
+2026-03-14 19:49:43,612 - INFO - slack_bolt.App - A new session has been established (session id: fffe14b2-f246-472d-84c3-4db628127564)
+2026-03-14 19:49:43,612 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 19:49:43,642 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: db2c2f5b-5603-4d11-8bfb-cc714af74b78)
+2026-03-14 19:49:43,749 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: fffe14b2-f246-472d-84c3-4db628127564)

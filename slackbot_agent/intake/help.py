@@ -11,7 +11,7 @@ HELP_PATTERNS = [
     r"\bhelp\b",
     r"\bhelp\s+me\b",
 
-    # what can you do (and e.g. "what can you do for me")
+    # what can you do (and e.g. "what can you do")
     r"what\s+can\s+you\s+do",
     r"what\s+can\s+you\s+help\s+with",
     r"how\s+can\s+you\s+help",
