@@ -1,9 +1,14 @@
-I'm connected to the *Chinook* database—a sample music store database. Here’s what’s in it (in plain terms):
+I’m connected to the Chinook music store database. Here’s the data I can help you explore:
 
-• *Artists* and *albums*
-• *Tracks*, *genres*, and *media types*
-• *Playlists* and which tracks are in them (*playlist–track*)
-• *Customers*, *invoices*, and *invoice lines*
-• *Employees*
+Music catalog
+- Artists and the albums they released
+- Tracks (songs), their genres, and media types
+- Playlists and the tracks included in them
 
-Ask me anything about the above—e.g. who has the most albums, revenue by artist, or top tracks in a playlist. Say *chart* or *graph* when you want a visualization instead of a table.
+Sales & customers
+- Customers and their contact details
+- Invoices and purchased tracks
+- Revenue generated from music purchases
+
+Organization
+-Employees who support customers and sales

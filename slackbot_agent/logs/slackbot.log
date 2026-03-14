@@ -22913,3 +22913,211 @@ Index: []]
 2026-03-13 17:19:41,201 - INFO - slack_bolt.App - A new session has been established (session id: 368d0f99-c478-4ced-a42e-a1f9690f2c0e)
 2026-03-13 17:19:41,202 - INFO - slack_bolt.App - Bolt app is running!
 2026-03-13 17:19:41,231 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 368d0f99-c478-4ced-a42e-a1f9690f2c0e)
+2026-03-13 17:28:43,846 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/album
+2026-03-13 17:28:43,859 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/artist
+2026-03-13 17:28:43,886 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/customer
+2026-03-13 17:28:43,909 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/employee
+2026-03-13 17:28:43,918 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/genre
+2026-03-13 17:28:43,935 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/invoice
+2026-03-13 17:28:43,951 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/invoice-line
+2026-03-13 17:28:43,959 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/media-type
+2026-03-13 17:28:43,968 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/playlist
+2026-03-13 17:28:43,978 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/playlist-track
+2026-03-13 17:28:43,995 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/track
+2026-03-13 17:28:44,039 - INFO - slackbot_agent.semantic_layer.semantic_layer - Dataset loaded successfully: chinook/music-analytics
+2026-03-13 17:28:44,040 - INFO - slackbot_agent.semantic_layer.semantic_layer - Loaded 12 sources (all chinook tables + music_analytics)
+2026-03-13 17:28:44,040 - INFO - slackbot_agent.semantic_layer.semantic_layer - Sources: [PandasAI DataFrame(name='album', description='The Album table contains information about music albums. The record for each album is linked to the artist.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='artist', description='The artist table contains information about music artists.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='customer', description='The Customer table holds the information about each customer along with their contact details and a sales representative assigned to each customer.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='employee', description='The Employee table holds the employee details.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='genre', description='The Genre table contains information about all genres.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='invoice', description='The invoice table contains billing information for customer purchases. It aggregates sales data per transaction.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='invoice_line', description='The invoice line table contains line items for each invoice, stating the tracks purchased and quantities.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='media_type', description='The Media type table contains information about the media type of audio and video files.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='playlist', description='The Playlist table contains information about playlists.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='playlist_track', description='This table links playlists and tracks together by their ids.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='track', description='The track table contains detailed information for each song or media file, including metadata like price, duration and size.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='music_analytics', description='Simplified view for artist–album relationship (one relation to avoid PandasAI DuplicateAlias).')
+Empty VirtualDataFrame
+Columns: []
+Index: []]
+2026-03-13 17:28:44,065 - INFO - slackbot_agent.engine.reasoner - [PandasAI DataFrame(name='album', description='The Album table contains information about music albums. The record for each album is linked to the artist.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='artist', description='The artist table contains information about music artists.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='customer', description='The Customer table holds the information about each customer along with their contact details and a sales representative assigned to each customer.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='employee', description='The Employee table holds the employee details.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='genre', description='The Genre table contains information about all genres.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='invoice', description='The invoice table contains billing information for customer purchases. It aggregates sales data per transaction.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='invoice_line', description='The invoice line table contains line items for each invoice, stating the tracks purchased and quantities.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='media_type', description='The Media type table contains information about the media type of audio and video files.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='playlist', description='The Playlist table contains information about playlists.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='playlist_track', description='This table links playlists and tracks together by their ids.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='track', description='The track table contains detailed information for each song or media file, including metadata like price, duration and size.')
+Empty VirtualDataFrame
+Columns: []
+Index: [], PandasAI DataFrame(name='music_analytics', description='Simplified view for artist–album relationship (one relation to avoid PandasAI DuplicateAlias).')
+Empty VirtualDataFrame
+Columns: []
+Index: []]
+2026-03-13 17:28:44,090 - INFO - slackbot_agent.engine.reasoner - <pandasai.agent.base.Agent object at 0x00000261ABDC7C10>
+2026-03-13 17:28:44,511 - INFO - slack_bolt.App - A new session has been established (session id: 45bb566c-fc2b-49a6-b5c0-69bf38e55591)
+2026-03-13 17:28:44,512 - INFO - slack_bolt.App - Bolt app is running!
+2026-03-13 17:28:44,523 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 45bb566c-fc2b-49a6-b5c0-69bf38e55591)
+2026-03-13 20:40:25,208 - INFO - slack_bolt.App - The connection seems to be stale. Disconnecting... (session id: 45bb566c-fc2b-49a6-b5c0-69bf38e55591, reason: disconnected for 9088+ seconds)
+2026-03-13 20:40:26,171 - INFO - slack_bolt.App - The connection has been closed (session id: 45bb566c-fc2b-49a6-b5c0-69bf38e55591)
+2026-03-13 20:40:26,179 - INFO - slack_bolt.App - The session seems to be already closed. Reconnecting... (session id: 45bb566c-fc2b-49a6-b5c0-69bf38e55591)
+2026-03-13 20:40:26,181 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-13 20:40:26,728 - INFO - slack_bolt.App - The connection has been closed (session id: 45bb566c-fc2b-49a6-b5c0-69bf38e55591)
+2026-03-13 20:40:26,730 - INFO - slack_bolt.App - A new session has been established (session id: 7650ae3e-520b-4be7-962e-779a8256c47a)
+2026-03-13 20:40:26,733 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-13 20:40:26,867 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 45bb566c-fc2b-49a6-b5c0-69bf38e55591)
+2026-03-13 20:40:26,993 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 7650ae3e-520b-4be7-962e-779a8256c47a)
+2026-03-14 00:08:18,906 - INFO - slack_bolt.App - The connection seems to be stale. Disconnecting... (session id: 7650ae3e-520b-4be7-962e-779a8256c47a, reason: disconnected for 10820+ seconds)
+2026-03-14 00:08:21,209 - INFO - slack_bolt.App - The connection has been closed (session id: 7650ae3e-520b-4be7-962e-779a8256c47a)
+2026-03-14 00:08:21,452 - INFO - slack_bolt.App - The session seems to be already closed. Reconnecting... (session id: 7650ae3e-520b-4be7-962e-779a8256c47a)
+2026-03-14 00:08:21,669 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 00:08:24,578 - INFO - slack_bolt.App - The connection has been closed (session id: 7650ae3e-520b-4be7-962e-779a8256c47a)
+2026-03-14 00:08:24,605 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 7650ae3e-520b-4be7-962e-779a8256c47a)
+2026-03-14 00:08:24,646 - INFO - slack_bolt.App - A new session has been established (session id: 9a2e75bf-e51b-4a86-b6de-a6df726d7c2b)
+2026-03-14 00:08:24,907 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 00:08:25,026 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 9a2e75bf-e51b-4a86-b6de-a6df726d7c2b)
+2026-03-14 00:08:25,187 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 00:08:28,187 - INFO - slack_bolt.App - The connection has been closed (session id: 9a2e75bf-e51b-4a86-b6de-a6df726d7c2b)
+2026-03-14 00:08:28,193 - INFO - slack_bolt.App - A new session has been established (session id: b54b8ab3-9eda-4274-8ad1-cc09f274741d)
+2026-03-14 00:08:28,196 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 00:08:28,204 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 9a2e75bf-e51b-4a86-b6de-a6df726d7c2b)
+2026-03-14 00:08:28,313 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: b54b8ab3-9eda-4274-8ad1-cc09f274741d)
+2026-03-14 00:08:28,329 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 00:08:31,331 - INFO - slack_bolt.App - The connection has been closed (session id: b54b8ab3-9eda-4274-8ad1-cc09f274741d)
+2026-03-14 00:08:31,349 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: b54b8ab3-9eda-4274-8ad1-cc09f274741d)
+2026-03-14 00:08:31,355 - INFO - slack_bolt.App - A new session has been established (session id: 2fa0c6e2-b510-4144-aadc-0d21727c451e)
+2026-03-14 00:08:31,376 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 00:08:31,474 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 2fa0c6e2-b510-4144-aadc-0d21727c451e)
+2026-03-14 00:08:31,499 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 00:08:34,508 - INFO - slack_bolt.App - The connection has been closed (session id: 2fa0c6e2-b510-4144-aadc-0d21727c451e)
+2026-03-14 00:08:34,524 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 2fa0c6e2-b510-4144-aadc-0d21727c451e)
+2026-03-14 00:08:34,525 - INFO - slack_bolt.App - A new session has been established (session id: fcc6cfba-1729-4cd7-b508-23ddfc7d5a02)
+2026-03-14 00:08:34,609 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 00:08:34,654 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: fcc6cfba-1729-4cd7-b508-23ddfc7d5a02)
+2026-03-14 00:08:34,699 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 00:08:37,700 - INFO - slack_bolt.App - The connection has been closed (session id: fcc6cfba-1729-4cd7-b508-23ddfc7d5a02)
+2026-03-14 00:08:37,701 - INFO - slack_bolt.App - A new session has been established (session id: 694962f5-65a1-41c5-a23f-ff931bf6cc2c)
+2026-03-14 00:08:37,701 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 00:08:37,716 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: fcc6cfba-1729-4cd7-b508-23ddfc7d5a02)
+2026-03-14 00:08:37,827 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 694962f5-65a1-41c5-a23f-ff931bf6cc2c)
+2026-03-14 04:43:21,012 - INFO - slack_bolt.App - The connection seems to be stale. Disconnecting... (session id: 694962f5-65a1-41c5-a23f-ff931bf6cc2c, reason: disconnected for 16475+ seconds)
+2026-03-14 04:43:21,186 - INFO - slack_bolt.App - The connection has been closed (session id: 694962f5-65a1-41c5-a23f-ff931bf6cc2c)
+2026-03-14 04:43:21,186 - INFO - slack_bolt.App - The session seems to be already closed. Reconnecting... (session id: 694962f5-65a1-41c5-a23f-ff931bf6cc2c)
+2026-03-14 04:43:21,187 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 04:43:21,356 - ERROR - slack_bolt.App - Failed to send a request to Slack API server: <urlopen error [Errno 11001] getaddrinfo failed>
+2026-03-14 04:43:22,554 - INFO - slack_bolt.App - Going to retry the same request: POST https://slack.com/api/apps.connections.open
+2026-03-14 04:43:22,998 - INFO - slack_bolt.App - The connection has been closed (session id: 694962f5-65a1-41c5-a23f-ff931bf6cc2c)
+2026-03-14 04:43:23,000 - INFO - slack_bolt.App - A new session has been established (session id: 86754452-c69c-48db-a837-dec6df12522e)
+2026-03-14 04:43:23,002 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 04:43:23,127 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 694962f5-65a1-41c5-a23f-ff931bf6cc2c)
+2026-03-14 04:43:23,344 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 86754452-c69c-48db-a837-dec6df12522e)
+2026-03-14 04:43:23,380 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 04:43:26,383 - INFO - slack_bolt.App - The connection has been closed (session id: 86754452-c69c-48db-a837-dec6df12522e)
+2026-03-14 04:43:26,383 - INFO - slack_bolt.App - A new session has been established (session id: b926be3f-0629-4e5a-bbe2-22dd91f2a47e)
+2026-03-14 04:43:26,384 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 04:43:26,398 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 86754452-c69c-48db-a837-dec6df12522e)
+2026-03-14 04:43:26,505 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: b926be3f-0629-4e5a-bbe2-22dd91f2a47e)
+2026-03-14 04:43:26,506 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 04:43:29,515 - INFO - slack_bolt.App - The connection has been closed (session id: b926be3f-0629-4e5a-bbe2-22dd91f2a47e)
+2026-03-14 04:43:29,516 - INFO - slack_bolt.App - A new session has been established (session id: 1c5f8063-2374-46f8-8a8c-8d1b37dabe93)
+2026-03-14 04:43:29,516 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 04:43:29,532 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: b926be3f-0629-4e5a-bbe2-22dd91f2a47e)
+2026-03-14 04:43:29,642 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 1c5f8063-2374-46f8-8a8c-8d1b37dabe93)
+2026-03-14 04:43:29,643 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 04:43:32,655 - INFO - slack_bolt.App - The connection has been closed (session id: 1c5f8063-2374-46f8-8a8c-8d1b37dabe93)
+2026-03-14 04:43:32,655 - INFO - slack_bolt.App - A new session has been established (session id: 1e1beede-f657-4940-b175-ce27f2341889)
+2026-03-14 04:43:32,656 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 04:43:32,672 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 1c5f8063-2374-46f8-8a8c-8d1b37dabe93)
+2026-03-14 04:43:32,784 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 1e1beede-f657-4940-b175-ce27f2341889)
+2026-03-14 04:43:32,819 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 04:43:35,820 - INFO - slack_bolt.App - The connection has been closed (session id: 1e1beede-f657-4940-b175-ce27f2341889)
+2026-03-14 04:43:35,822 - INFO - slack_bolt.App - A new session has been established (session id: 611ada42-407b-4469-9c33-1f6738be937f)
+2026-03-14 04:43:35,822 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 04:43:35,837 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 1e1beede-f657-4940-b175-ce27f2341889)
+2026-03-14 04:43:35,944 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 611ada42-407b-4469-9c33-1f6738be937f)
+2026-03-14 04:46:49,035 - INFO - slack_bolt.App - The connection seems to be stale. Disconnecting... (session id: 611ada42-407b-4469-9c33-1f6738be937f, reason: disconnected for 95+ seconds)
+2026-03-14 04:46:49,525 - INFO - slack_bolt.App - The connection has been closed (session id: 611ada42-407b-4469-9c33-1f6738be937f)
+2026-03-14 04:46:49,563 - INFO - slack_bolt.App - The session seems to be already closed. Reconnecting... (session id: 611ada42-407b-4469-9c33-1f6738be937f)
+2026-03-14 04:46:49,577 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 04:46:49,995 - INFO - slack_bolt.App - The connection has been closed (session id: 611ada42-407b-4469-9c33-1f6738be937f)
+2026-03-14 04:46:49,996 - INFO - slack_bolt.App - A new session has been established (session id: 0ac7dbf0-55bd-4145-a42d-429fca84bca1)
+2026-03-14 04:46:49,996 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 04:46:50,164 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 611ada42-407b-4469-9c33-1f6738be937f)
+2026-03-14 04:46:50,434 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 0ac7dbf0-55bd-4145-a42d-429fca84bca1)
+2026-03-14 09:13:25,404 - INFO - slack_bolt.App - The connection seems to be stale. Disconnecting... (session id: 0ac7dbf0-55bd-4145-a42d-429fca84bca1, reason: disconnected for 10810+ seconds)
+2026-03-14 09:13:27,542 - INFO - slack_bolt.App - The connection has been closed (session id: 0ac7dbf0-55bd-4145-a42d-429fca84bca1)
+2026-03-14 09:13:27,545 - INFO - slack_bolt.App - The session seems to be already closed. Reconnecting... (session id: 0ac7dbf0-55bd-4145-a42d-429fca84bca1)
+2026-03-14 09:13:27,545 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 09:13:27,994 - INFO - slack_bolt.App - The connection has been closed (session id: 0ac7dbf0-55bd-4145-a42d-429fca84bca1)
+2026-03-14 09:13:28,000 - INFO - slack_bolt.App - A new session has been established (session id: 1997ffca-f336-4bdc-bf31-0019adfda387)
+2026-03-14 09:13:28,006 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 09:13:28,207 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 0ac7dbf0-55bd-4145-a42d-429fca84bca1)
+2026-03-14 09:13:28,317 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 1997ffca-f336-4bdc-bf31-0019adfda387)
+2026-03-14 18:14:31,167 - INFO - slack_bolt.App - The connection seems to be stale. Disconnecting... (session id: 1997ffca-f336-4bdc-bf31-0019adfda387, reason: disconnected for 32453+ seconds)
+2026-03-14 18:14:31,371 - INFO - slack_bolt.App - The connection has been closed (session id: 1997ffca-f336-4bdc-bf31-0019adfda387)
+2026-03-14 18:14:31,397 - INFO - slack_bolt.App - The session seems to be already closed. Reconnecting... (session id: 1997ffca-f336-4bdc-bf31-0019adfda387)
+2026-03-14 18:14:31,421 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 18:14:31,916 - INFO - slack_bolt.App - The connection has been closed (session id: 1997ffca-f336-4bdc-bf31-0019adfda387)
+2026-03-14 18:14:31,938 - INFO - slack_bolt.App - A new session has been established (session id: 33a30903-7833-4c43-b677-c5e45bac9afd)
+2026-03-14 18:14:31,951 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 18:14:32,000 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 1997ffca-f336-4bdc-bf31-0019adfda387)
+2026-03-14 18:14:32,111 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 33a30903-7833-4c43-b677-c5e45bac9afd)
+2026-03-14 18:19:52,261 - ERROR - slack_bolt.App - Failed to check the state of sock (session id: 33a30903-7833-4c43-b677-c5e45bac9afd, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2426))
+2026-03-14 18:20:02,271 - ERROR - slack_bolt.App - Failed to check the state of sock (session id: 33a30903-7833-4c43-b677-c5e45bac9afd, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2426))
+2026-03-14 18:20:12,272 - ERROR - slack_bolt.App - Failed to check the state of sock (session id: 33a30903-7833-4c43-b677-c5e45bac9afd, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2426))
+2026-03-14 18:20:22,280 - ERROR - slack_bolt.App - Failed to check the state of sock (session id: 33a30903-7833-4c43-b677-c5e45bac9afd, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2426))
+2026-03-14 18:20:32,295 - ERROR - slack_bolt.App - Failed to check the state of sock (session id: 33a30903-7833-4c43-b677-c5e45bac9afd, error: SSLEOFError, message: EOF occurred in violation of protocol (_ssl.c:2426))
+2026-03-14 18:20:32,296 - INFO - slack_bolt.App - The connection has been closed (session id: 33a30903-7833-4c43-b677-c5e45bac9afd)
+2026-03-14 18:20:32,298 - INFO - slack_bolt.App - The session seems to be already closed. Reconnecting... (session id: 33a30903-7833-4c43-b677-c5e45bac9afd)
+2026-03-14 18:20:32,298 - INFO - slack_bolt.App - Connecting to a new endpoint...
+2026-03-14 18:20:33,881 - INFO - slack_bolt.App - The connection has been closed (session id: 33a30903-7833-4c43-b677-c5e45bac9afd)
+2026-03-14 18:20:33,882 - INFO - slack_bolt.App - A new session has been established (session id: 29bfa110-8ec6-477d-856d-410ef6f95d2b)
+2026-03-14 18:20:33,883 - INFO - slack_bolt.App - Connected to a new endpoint...
+2026-03-14 18:20:33,941 - INFO - slack_bolt.App - Stopped receiving messages from a connection (session id: 33a30903-7833-4c43-b677-c5e45bac9afd)
+2026-03-14 18:20:34,049 - INFO - slack_bolt.App - Starting to receive messages from a new connection (session id: 29bfa110-8ec6-477d-856d-410ef6f95d2b)
